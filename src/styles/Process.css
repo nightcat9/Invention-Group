@@ -1,0 +1,10 @@
+.processPage {
+  background-image: url(../images/body-bg.jpg);
+  margin: 2%;
+  padding: 2% 5%;
+  border-radius: 10px;
+}
+
+h1 {
+  color: black;
+}/*# sourceMappingURL=Process.css.map */
