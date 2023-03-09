@@ -1,6 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import '../styles/Newsletter.css';
 import { Row, Col } from 'react-bootstrap';
+import Body from './Reviews.tsx';
+import FormComponent from './ReviewForm.tsx';
 
 function NewsletterPage() {
     return (
@@ -14,7 +16,10 @@ function NewsletterPage() {
                         
                     </Col>
                 </Row>
-                
+                <Row>
+                    <Body />
+                    <FormComponent />
+                </Row>
             </div>
         </Container>
         
