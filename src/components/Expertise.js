@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
-import PocketWatch from '../images/pocketWatch.jpg';
+import SteamBike from '../images/steam-bike.jpg';
+import SpaceTravel from '../images/space-travel.jpg';
 import '../styles/Expertise.css';
 
 function ExpertisePage() {
@@ -25,6 +26,16 @@ function ExpertisePage() {
                             invention to go to market. Every invention we support serves a different marketand incorporates its own unique
                             aspects. We can't and we won't put you through the same process as the last inventor.
                         </p>
+                    </Col>
+                    <Col>
+                        <img src={SpaceTravel} alt="Spaceship" className='spaceship' />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <img src={SteamBike} alt="Steam powered bike" className='steamBike' />
+                    </Col>
+                    <Col>
                         <h3>Our Promise</h3>
                         <p>
                             We are not another invention marketing company. We do not accept every invention idea. Our rigorous evaluation
@@ -39,9 +50,6 @@ function ExpertisePage() {
                         <p>
                             If you are ready to begin, click here to request your free invention evaluation.
                         </p>
-                    </Col>
-                    <Col>
-                        <img src={PocketWatch} alt="Pocket Watch" className='pocketWatch' />
                     </Col>
                 </Row>
             </div>

@@ -17,6 +17,7 @@ import Expertise from "./Expertise";
 import Process from "./Process";
 import FAQ from "./FAQ";
 import Contact from "./Contact";
+import Newsletter from "./Newsletter";
 
 function Navigation() {
   return (
@@ -31,6 +32,7 @@ function Navigation() {
               <Nav.Link as={Link} to={"/expertise"}>Expertise</Nav.Link>
               <Nav.Link as={Link} to={"/process"}>Process</Nav.Link>
               <Nav.Link as={Link} to={"/faq"}>FAQ</Nav.Link>
+              <Nav.Link as={Link} to={"/newsletter"}>Newsletter</Nav.Link>
               <Nav.Link as={Link} to={"/contact"}>Contact Us</Nav.Link>
             </Nav>
             <Form className="d-flex">
@@ -56,6 +58,8 @@ function Navigation() {
           <Route path="/process" element={<Process/>}>
           </Route>
           <Route path="/faq" element={<FAQ/>}>
+          </Route>
+          <Route path="/newsletter" element={<Newsletter/>}>
           </Route>
           <Route path="/contact" element={<Contact/>}>
           </Route>

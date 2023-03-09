@@ -1,4 +1,4 @@
-.expertisePage {
+.newsletterPage {
   background-image: url(../images/body-bg.jpg);
   margin: 2%;
   padding: 2% 5%;
@@ -7,9 +7,4 @@
 
 h1 {
   color: black;
-}
-
-.steamBike, .spaceship {
-  width: 100%;
-  height: auto;
-}/*# sourceMappingURL=Expertise.css.map */
+}/*# sourceMappingURL=Newsletter.css.map */
