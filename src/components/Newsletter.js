@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import '../styles/Newsletter.css';
 import { Row, Col } from 'react-bootstrap';
-import Body from './Reviews.tsx';
+import Review from './Review.tsx';
 import FormComponent from './ReviewForm.tsx';
 
 function NewsletterPage() {
@@ -17,7 +17,8 @@ function NewsletterPage() {
                     </Col>
                 </Row>
                 <Row>
-                    <Body />
+                    <Review />
+                    <Review firstName="Andy" lastName="Prime" stars="2" />
                     <FormComponent />
                 </Row>
             </div>

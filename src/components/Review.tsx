@@ -7,7 +7,7 @@ import {
   CardImg,
 } from "reactstrap";
 
-function Body({
+function Review({
   firstName,
   lastName,
   stars,
@@ -24,7 +24,6 @@ function Body({
   return (
     <Card>
       <CardBody>
-        <CardTitle tag="h1">Reviews Page</CardTitle>
         <div className="reviews-top">
           <div className="user-details">
             <CardImg
@@ -57,4 +56,4 @@ function Body({
   );
 }
 
-export default Body;
+export default Review;

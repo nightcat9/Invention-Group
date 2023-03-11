@@ -15,9 +15,13 @@ import Home from "./Home";
 import About from "./About";
 import Expertise from "./Expertise";
 import Process from "./Process";
+import Services from "./Services";
 import FAQ from "./FAQ";
-import Contact from "./Contact";
+import Blog from "./Blog";
 import Newsletter from "./Newsletter";
+import Careers from "./Careers";
+import Contact from "./Contact";
+
 
 function Navigation() {
   return (
@@ -31,8 +35,11 @@ function Navigation() {
               <Nav.Link as={Link} to={"/about"}>About Us</Nav.Link>
               <Nav.Link as={Link} to={"/expertise"}>Expertise</Nav.Link>
               <Nav.Link as={Link} to={"/process"}>Process</Nav.Link>
+              <Nav.Link as={Link} to={"/services"}>Services</Nav.Link>
               <Nav.Link as={Link} to={"/faq"}>FAQ</Nav.Link>
+              <Nav.Link as={Link} to={"/blog"}>Blog</Nav.Link>
               <Nav.Link as={Link} to={"/newsletter"}>Newsletter</Nav.Link>
+              <Nav.Link as={Link} to={"/careers"}>Careers</Nav.Link>
               <Nav.Link as={Link} to={"/contact"}>Contact Us</Nav.Link>
             </Nav>
             <Form className="d-flex">
@@ -49,20 +56,16 @@ function Navigation() {
       </Navbar>
       <div>
         <Routes>
-          <Route path="/home" element={<Home/>}>
-          </Route>
-          <Route path="/about" element={<About/>}>
-          </Route>
-          <Route path="/expertise" element={<Expertise/>}>
-          </Route>
-          <Route path="/process" element={<Process/>}>
-          </Route>
-          <Route path="/faq" element={<FAQ/>}>
-          </Route>
-          <Route path="/newsletter" element={<Newsletter/>}>
-          </Route>
-          <Route path="/contact" element={<Contact/>}>
-          </Route>
+          <Route path="/home" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/expertise" element={<Expertise/>} />
+          <Route path="/process" element={<Process/>} />          
+          <Route path="/services" element={<Services/>} />         
+          <Route path="/faq" element={<FAQ/>} />         
+          <Route path="/blog" element={<Blog/>} />       
+          <Route path="/newsletter" element={<Newsletter/>} />         
+          <Route path="/careers" element={<Careers/>} />          
+          <Route path="/contact" element={<Contact/>} />       
         </Routes>
       </div>
     </Router>
