@@ -49,7 +49,7 @@ export default function FormComponent() {
     <div className="form-container">
       <Form onSubmit={submithandler}>
       <Input
-          className="reviews-form"
+          className="review-title"
           type="text"
           placeholder="Review Heading"
           value={reviewTitle}

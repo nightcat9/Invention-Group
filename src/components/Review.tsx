@@ -4,7 +4,6 @@ import {
   CardSubtitle,
   CardText,
   CardBody,
-  CardImg,
 } from "reactstrap";
 
 function Review({
@@ -27,20 +26,19 @@ function Review({
     <Card>
       <CardBody>
         <div className="reviews-top">
-          <div className="user-details">
-            <CardImg
-              className="avatar"
-              alt="user avatar"
-            />
-            <CardTitle className="review-title" tag="h4">
-              {reviewTitle}
-            </CardTitle>
-            <CardSubtitle className="mb-2 text-muted" tag="h6">
-              {firstName} {lastName || "John Doe"}
-            </CardSubtitle>
+          <CardTitle className="review-title" tag="h4">
+              {reviewTitle || "This is my title"}
+          </CardTitle>
+          <div className="user-rating">
             {[...Array(stars || 5)].map((star) => {
               return <CardSubtitle tag="h5">⭐ </CardSubtitle>;
             })}
+          </div>
+          <div className="user-details"> 
+            <CardSubtitle className="mb-2 text-muted" tag="h6">
+              {firstName} {lastName || "John Doe"}
+            </CardSubtitle>
+            
           </div>
           <div className="reviews-body">
             <CardText>

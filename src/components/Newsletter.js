@@ -18,6 +18,8 @@ function NewsletterPage() {
                 </Row>
                 <Row>
                     <Review />
+                </Row>
+                <Row>
                     <FormComponent />
                 </Row>
             </div>
