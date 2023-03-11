@@ -18,7 +18,6 @@ function NewsletterPage() {
                 </Row>
                 <Row>
                     <Review />
-                    <Review firstName="Andy" lastName="Prime" stars="2" />
                     <FormComponent />
                 </Row>
             </div>

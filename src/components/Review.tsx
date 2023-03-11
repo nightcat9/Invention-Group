@@ -1,19 +1,21 @@
 import {
   Card,
+  CardTitle,
   CardSubtitle,
   CardText,
-  CardTitle,
   CardBody,
   CardImg,
 } from "reactstrap";
 
 function Review({
+  reviewTitle,
   firstName,
   lastName,
   stars,
   comment,
   timestamp,
 }: {
+  reviewTitle: string;
   firstName: string;
   lastName: string;
   profilePic: string;
@@ -28,10 +30,11 @@ function Review({
           <div className="user-details">
             <CardImg
               className="avatar"
-              
               alt="user avatar"
             />
-
+            <CardTitle className="review-title" tag="h4">
+              {reviewTitle}
+            </CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
               {firstName} {lastName || "John Doe"}
             </CardSubtitle>
