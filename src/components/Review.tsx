@@ -30,8 +30,8 @@ function Review({
               {reviewTitle || "This is my title"}
           </CardTitle>
           <div className="user-rating">
-            {[...Array(stars || 5)].map((star) => {
-              return <CardSubtitle tag="h5">⭐ </CardSubtitle>;
+            {[...Array(stars || 5)].map((star, index) => {
+              return <CardSubtitle key={index} tag="h5">⭐ </CardSubtitle>;
             })}
           </div>
           <div className="user-details"> 

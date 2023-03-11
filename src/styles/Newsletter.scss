@@ -28,6 +28,7 @@ h1 {
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
   }
   .user-details {
     align-items: center;
@@ -42,8 +43,12 @@ h1 {
   
   .reviews-form {
     padding: 5px;
-    width: 50vw;
+    width: 50%;
     border-radius: 20px;
+  }
+
+  .user-form {
+    display: inline;
   }
   
   .form-container {

@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Button, Form, Input } from "reactstrap";
+import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 import handleSubmit from './handlesubmit';
 
 export default function FormComponent() {
   const [reviewTitle, setReviewTitle] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [reviews, setReviews] = useState("");
+  const [comment, setComment] = useState("");
   const [stars, setStars] = useState("");
 
   const onChangeReviewTitle = (e: any) => {
@@ -19,7 +19,7 @@ export default function FormComponent() {
     setLastName(e.target.value);
   };
   const onChange = (e: any) => {
-    setReviews(e.target.value);
+    setComment(e.target.value);
   };
   const onChangeStars = (e: any) => {
     setStars(e.target.value);
@@ -35,26 +35,38 @@ export default function FormComponent() {
           stars : stars,
           firstName : firstName,
           lastName : lastName,
-          reviews : reviews,
+          comment : comment,
         }
         handleSubmit(result)
         setReviewTitle("");
         setStars("");
         setFirstName("");
         setLastName("");
-        setReviews("");
+        setComment("");
       }
     
   return (
     <div className="form-container">
       <Form onSubmit={submithandler}>
-      <Input
-          className="review-title"
+        <div className="form-display">
+          <FormGroup>
+          <Label for="reviewTitle" hidden>Review Title</Label>
+          <Input
+          className="form-review-title"
           type="text"
+          name="text"
+          id="reviewTitle"
           placeholder="Review Heading"
           value={reviewTitle}
           onChange={onChangeReviewTitle}
         />
+        </FormGroup>
+        {' '}
+        <FormGroup>
+          <Label for="examplePassword" hidden>Password</Label>
+          <Input type="password" name="password" id="examplePassword" placeholder="Password" />
+        </FormGroup>
+        {' '}
         <Input
           className="reviews-form"
           type="number"
@@ -80,13 +92,15 @@ export default function FormComponent() {
           className="reviews-form"
           type="text"
           placeholder="enter your review"
-          value={reviews}
+          value={comment}
           onChange={onChange}
         />
         
         <Button type="submit" style={{ background: "Green" }}>
           Submit
         </Button>
+        </div>
+      
       </Form>
     </div>
   );
