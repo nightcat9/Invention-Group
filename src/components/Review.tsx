@@ -1,3 +1,4 @@
+
 import {
   Card,
   CardTitle,
@@ -12,7 +13,7 @@ function Review({
   lastName,
   stars,
   comment,
-  timestamp,
+  date,
 }: {
   reviewTitle: string;
   firstName: string;
@@ -20,7 +21,7 @@ function Review({
   profilePic: string;
   stars: number;
   comment: string;
-  timestamp: number;
+  date: number;
 }) {
   return (
     <Card>
@@ -48,7 +49,6 @@ function Review({
           </div>
           <CardText>
             <small className="text-muted text-bold">
-              {timestamp || "3 mins ago"}
             </small>
           </CardText>
         </div>

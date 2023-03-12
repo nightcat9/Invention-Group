@@ -38,7 +38,10 @@ function NewsletterPage() {
                                 lastName={review.lastName}
                                 reviewTitle={review.reviewTitle}
                                 comment={review.comment}
-                                stars={+review.stars} />
+                                stars={+review.stars}
+                                date={review.date} 
+                                
+                                />
                     )) }
                 </Row>
                 <Row>

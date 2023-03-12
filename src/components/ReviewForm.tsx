@@ -1,6 +1,8 @@
+import SimpleDateTime from 'react-simple-timestamp-to-date';
 import { useState } from "react";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 import handleSubmit from './handlesubmit';
+
 
 export default function FormComponent() {
   const [reviewTitle, setReviewTitle] = useState("");
@@ -8,6 +10,7 @@ export default function FormComponent() {
   const [lastName, setLastName] = useState("");
   const [comment, setComment] = useState("");
   const [stars, setStars] = useState("");
+  const [date, setDate] = useState("");
 
   const onChangeReviewTitle = (e: any) => {
     setReviewTitle(e.target.value);
@@ -22,9 +25,19 @@ export default function FormComponent() {
     setComment(e.target.value);
   };
   const onChangeStars = (e: any) => {
-    setStars(e.target.value);
+    var starNum = e.target.value;
+    if (starNum > 5) {
+      starNum = 5;
+    }
+    if (starNum < 1) {
+      starNum = 1;
+    }
+    setStars(starNum);
   }
-
+  const onChangeTime = (e: any) => {
+    setDate(e.target.value);
+  }
+  
   const onSubmit = (e: any) => {
     console.log("Form Submitted");
   };
@@ -36,6 +49,8 @@ export default function FormComponent() {
           firstName : firstName,
           lastName : lastName,
           comment : comment,
+          date : date,
+
         }
         handleSubmit(result)
         setReviewTitle("");
@@ -59,12 +74,8 @@ export default function FormComponent() {
           placeholder="Review Heading"
           value={reviewTitle}
           onChange={onChangeReviewTitle}
+          required
         />
-        </FormGroup>
-        {' '}
-        <FormGroup>
-          <Label for="examplePassword" hidden>Password</Label>
-          <Input type="password" name="password" id="examplePassword" placeholder="Password" />
         </FormGroup>
         {' '}
         <Input
@@ -73,6 +84,7 @@ export default function FormComponent() {
           placeholder="Star Rating"
           value={stars}
           onChange={onChangeStars}
+          required
         />
         <Input
           className="reviews-form"
@@ -80,6 +92,7 @@ export default function FormComponent() {
           placeholder="First Name"
           value={firstName}
           onChange={onChangeFirstName}
+          required
         />
         <Input
           className="reviews-form"
@@ -87,6 +100,7 @@ export default function FormComponent() {
           placeholder="Last Name"
           value={lastName}
           onChange={onChangeLastName}
+          required
         />
         <Input
           className="reviews-form"
@@ -94,8 +108,11 @@ export default function FormComponent() {
           placeholder="enter your review"
           value={comment}
           onChange={onChange}
+          required
         />
-        
+        <div className="timestamp">
+          <SimpleDateTime dateSeparator="/" format="MDY"timeSeparator=":" meridians="1">{new Date()}</SimpleDateTime>
+        </div>
         <Button type="submit" style={{ background: "Green" }}>
           Submit
         </Button>
