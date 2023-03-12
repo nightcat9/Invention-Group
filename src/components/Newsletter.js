@@ -39,7 +39,7 @@ function NewsletterPage() {
                                 reviewTitle={review.reviewTitle}
                                 comment={review.comment}
                                 stars={+review.stars}
-                                date={review.date} 
+                                reviewDate={review.reviewDate} 
                                 
                                 />
                     )) }

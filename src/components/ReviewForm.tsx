@@ -37,12 +37,14 @@ export default function FormComponent() {
   };
   const submithandler = (e) => {
     e.preventDefault()
+    var reviewDate = new Date();
     var result = {
       reviewTitle: reviewTitle,
       stars: stars,
       firstName: firstName,
       lastName: lastName,
       comment: comment,
+      reviewDate: reviewDate,
     }
     handleSubmit(result)
     setReviewTitle("");
@@ -63,21 +65,22 @@ export default function FormComponent() {
               type="text"
               name="text"
               id="reviewTitle"
-              placeholder="Review Heading"
+              placeholder="Review Title"
               value={reviewTitle}
               onChange={onChangeReviewTitle}
               required
             />
+
+            <Input
+              className="reviews-form"
+              type="number"
+              placeholder="Star Rating"
+              value={stars}
+              onChange={onChangeStars}
+              required
+            />
           </FormGroup>
           {' '}
-          <Input
-            className="reviews-form"
-            type="number"
-            placeholder="Star Rating"
-            value={stars}
-            onChange={onChangeStars}
-            required
-          />
           <Input
             className="reviews-form"
             type="text"
