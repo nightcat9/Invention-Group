@@ -1,11 +1,11 @@
 import Container from 'react-bootstrap/Container';
-import '../styles/Faq.css';
+import '../styles/Main.scss';
 
 function FAQPage() {
     return (
 
         <Container fluid>
-            <div className='faqPage'>
+            <div className='main-content'>
                 <h1>You've Got Questions, We've Got Answers</h1>
                 <h6>What do you do?</h6>
                 <p>

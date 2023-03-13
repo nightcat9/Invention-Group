@@ -1,13 +1,13 @@
 import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
 import Camera from '../images/camera.jpg';
-import '../styles/About.css';
+import '../styles/Main.scss';
 
 
 function AboutPage() {
     return (
         <Container fluid>
-            <div className='aboutpage'>
+            <div className='main-content'>
                 <Row>
                     <Col>
                         <h1>We Make Sure Your New Invention is Successful</h1>

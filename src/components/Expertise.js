@@ -2,12 +2,12 @@ import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
 import SteamBike from '../images/steam-bike.jpg';
 import SpaceTravel from '../images/space-travel.jpg';
-import '../styles/Expertise.css';
+import '../styles/Main.scss';
 
 function ExpertisePage() {
     return (
         <Container fluid>
-            <div className='expertisePage'>
+            <div className='main-content'>
                 <Row>
                     <Col>
                         <h1>Use Our 30 Years of Experience to Drive Your Success</h1>

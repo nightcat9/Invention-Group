@@ -1,4 +1,4 @@
-.aboutpage {
+.main-content {
   background-image: url(../images/body-bg.jpg);
   margin: 2%;
   padding: 2% 5%;
@@ -9,7 +9,10 @@ h1 {
   color: black;
 }
 
-.camera {
+.camera,
+.steamBike,
+.spaceship,
+.steamPunkGuy {
   width: 100%;
   height: auto;
-}/*# sourceMappingURL=About.css.map */
+}/*# sourceMappingURL=Main.css.map */

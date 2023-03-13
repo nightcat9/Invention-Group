@@ -1,11 +1,11 @@
 import Container from 'react-bootstrap/Container';
-import '../styles/Process.css';
+import '../styles/Main.scss';
 import { Row, Col } from 'react-bootstrap';
 
 function ProcessPage() {
     return (
         <Container fluid>
-            <div className='processPage'>
+            <div className='main-content'>
                 <Row>
                     <Col>
                         <h1>Our Experts Will Tailor a Plan for Your Success</h1>

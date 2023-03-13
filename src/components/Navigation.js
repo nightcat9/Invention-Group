@@ -18,7 +18,7 @@ import Process from "./Process";
 import Services from "./Services";
 import FAQ from "./FAQ";
 import Blog from "./Blog";
-import Newsletter from "./Newsletter";
+import Reviews from "./Reviews";
 import Careers from "./Careers";
 import Contact from "./Contact";
 
@@ -38,7 +38,7 @@ function Navigation() {
               <Nav.Link as={Link} to={"/services"}>Services</Nav.Link>
               <Nav.Link as={Link} to={"/faq"}>FAQ</Nav.Link>
               <Nav.Link as={Link} to={"/blog"}>Blog</Nav.Link>
-              <Nav.Link as={Link} to={"/newsletter"}>Newsletter</Nav.Link>
+              <Nav.Link as={Link} to={"/reviews"}>Reviews</Nav.Link>
               <Nav.Link as={Link} to={"/careers"}>Careers</Nav.Link>
               <Nav.Link as={Link} to={"/contact"}>Contact Us</Nav.Link>
             </Nav>
@@ -63,7 +63,7 @@ function Navigation() {
           <Route path="/services" element={<Services/>} />         
           <Route path="/faq" element={<FAQ/>} />         
           <Route path="/blog" element={<Blog/>} />       
-          <Route path="/newsletter" element={<Newsletter/>} />         
+          <Route path="/reviews" element={<Reviews/>} />         
           <Route path="/careers" element={<Careers/>} />          
           <Route path="/contact" element={<Contact/>} />       
         </Routes>

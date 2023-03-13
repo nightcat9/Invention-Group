@@ -1,14 +1,14 @@
 import Container from 'react-bootstrap/Container';
+import '../styles/Main.scss';
 
 function ContactPage() {
     return (
-        <div>
+        <div className='main-content'>
             <Container fluid>
                 <div></div>
-                <h1>Contact Us</h1>
+                <h1>Connect With Us Today</h1>
             </Container>
         </div>
-
     );
 }
 

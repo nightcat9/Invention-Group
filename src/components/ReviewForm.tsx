@@ -1,13 +1,20 @@
 import { useState } from "react";
-import { Button, Form, FormGroup, Label, Input } from "reactstrap";
+import {
+  Button,
+  Form,
+  Row,
+  Col,
+  Input
+} from "reactstrap";
 import handleSubmit from './handlesubmit';
+import StarRating from "./StarRating";
 
 export default function FormComponent() {
   const [reviewTitle, setReviewTitle] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [comment, setComment] = useState("");
-  const [stars, setStars] = useState("");
+  //const [stars, setStars] = useState("");
 
   const onChangeReviewTitle = (e: any) => {
     setReviewTitle(e.target.value);
@@ -21,7 +28,8 @@ export default function FormComponent() {
   const onChange = (e: any) => {
     setComment(e.target.value);
   };
-  const onChangeStars = (e: any) => {
+
+  /* const onChangeStars = (e: any) => {
     var starNum = e.target.value;
     if (starNum > 5) {
       starNum = 5;
@@ -30,7 +38,7 @@ export default function FormComponent() {
       starNum = 1;
     }
     setStars(starNum);
-  }
+  }*/
 
   const onSubmit = (e: any) => {
     console.log("Form Submitted");
@@ -40,7 +48,7 @@ export default function FormComponent() {
     var reviewDate = new Date();
     var result = {
       reviewTitle: reviewTitle,
-      stars: stars,
+      //stars: stars,
       firstName: firstName,
       lastName: lastName,
       comment: comment,
@@ -48,7 +56,7 @@ export default function FormComponent() {
     }
     handleSubmit(result)
     setReviewTitle("");
-    setStars("");
+    //setStars("");
     setFirstName("");
     setLastName("");
     setComment("");
@@ -58,58 +66,70 @@ export default function FormComponent() {
     <div className="form-container">
       <Form onSubmit={submithandler}>
         <div className="form-display">
-          <FormGroup>
-            <Label for="reviewTitle" hidden>Review Title</Label>
+          <StarRating />
+          <Input
+            className="form-review-title"
+            type="text"
+            name="text"
+            id="reviewTitle"
+            placeholder="Review Title"
+            value={reviewTitle}
+            onChange={onChangeReviewTitle}
+            required
+          />
+          <Row>
+            <Col>
+              <Input
+                className="firstName"
+                type="text"
+                placeholder="First Name"
+                value={firstName}
+                onChange={onChangeFirstName}
+                required
+              />
+            </Col>
+            <Col>
+              <Input
+                className="lastName"
+                type="text"
+                placeholder="Last Name"
+                value={lastName}
+                onChange={onChangeLastName}
+                required
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
             <Input
-              className="form-review-title"
-              type="text"
-              name="text"
-              id="reviewTitle"
-              placeholder="Review Title"
-              value={reviewTitle}
-              onChange={onChangeReviewTitle}
+              className="comment"
+              type="textarea"
+              placeholder="Enter your review comment"
+              value={comment}
+              onChange={onChange}
               required
             />
-
-            <Input
-              className="reviews-form"
-              type="number"
-              placeholder="Star Rating"
-              value={stars}
-              onChange={onChangeStars}
-              required
-            />
-          </FormGroup>
-          {' '}
-          <Input
-            className="reviews-form"
-            type="text"
-            placeholder="First Name"
-            value={firstName}
-            onChange={onChangeFirstName}
-            required
-          />
-          <Input
-            className="reviews-form"
-            type="text"
-            placeholder="Last Name"
-            value={lastName}
-            onChange={onChangeLastName}
-            required
-          />
-          <Input
-            className="reviews-form"
-            type="textarea"
-            placeholder="enter your review"
-            value={comment}
-            onChange={onChange}
-            required
-          />
-          <Button type="submit" style={{ background: "Green" }}>
-            Submit
-          </Button>
+            </Col>
+            
+          </Row>
+          <Row>
+            <Col>
+              <Input
+                /*className="rating"
+                type="number"
+                placeholder="Star Rating"
+                value={stars}
+                onChange={onChangeStars}
+                required*/
+              />
+            </Col>
+            <Col>
+              <Button type="submit" style={{ background: "Green" }}>
+                Submit
+              </Button>
+            </Col>
+          </Row>
         </div>
-
       </Form>
     </div>
   );

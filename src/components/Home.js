@@ -1,12 +1,12 @@
 import Container from 'react-bootstrap/Container';
-import '../styles/Home.css';
+import '../styles/Main.scss';
 import { Row, Col } from 'react-bootstrap';
 import SteamPunkGuy from '../images/steampunk-guy.jpg'
 
 function HomePage() {
     return (
         <Container fluid>
-            <div className='homepage'>
+            <div className='main-content'>
                 <Row>
                     <Col>
                         <h1>We Help Get Your New Idea Off the Ground</h1> 

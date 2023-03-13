@@ -51,7 +51,7 @@ function Review({
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reiciendis delectus dignissimos, nisi pariatur fuga officiis itaque fugiat! Quibusdam accusantium quae beatae vel.Quas possimus reprehenderit sequi quia nesciunt sunt!"}
             </CardText>
           </div>
-          <div>
+          <div className="review-date">
             <CardSubtitle>
               {dateString}    
             </CardSubtitle>
