@@ -8,15 +8,13 @@ function CareersPage() {
         <Container fluid>
             <div className='main-content'>
                 <Row>
-                    <Col>
-                        <h1>The Invention Group &mdash; Career Opportunities</h1>
-                    </Col>
+                    <h1>The Invention Group &mdash; Career Opportunities</h1>
                 </Row>
                 <Row>
 
                 </Row>
                 <Row>
-                
+
                 </Row>
             </div>
         </Container>

@@ -8,15 +8,13 @@ function BlogPage() {
         <Container fluid>
             <div className='main-content'>
                 <Row>
-                    <Col>
-                        <h1>Tell Us How to Invent Better</h1>
-                    </Col>
+                    <h1>Tell Us How to Invent Better</h1>
                 </Row>
                 <Row>
 
                 </Row>
                 <Row>
-                
+
                 </Row>
             </div>
         </Container>

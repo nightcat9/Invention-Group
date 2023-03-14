@@ -8,15 +8,15 @@ function ServicesPage() {
         <Container fluid>
             <div className='main-content'>
                 <Row>
+                    <h1>Tell Us How to Invent Better</h1>
+                </Row>
+                <Row>
                     <Col>
-                        <h1>Tell Us How to Invent Better</h1>
+
                     </Col>
                 </Row>
                 <Row>
 
-                </Row>
-                <Row>
-                
                 </Row>
             </div>
         </Container>

@@ -25,9 +25,7 @@ function ReviewsPage() {
         <Container fluid>
             <div className='main-content'>
                 <Row>
-                    <Col>
-                        <h1>Have You Worked With Us? Rate Your Experience!</h1>
-                    </Col>
+                    <h1>Have You Worked With Us? Rate Your Experience!</h1>
                 </Row>
                 <Row>
                     <FormComponent />

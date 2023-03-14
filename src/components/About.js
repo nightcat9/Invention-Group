@@ -9,8 +9,10 @@ function AboutPage() {
         <Container fluid>
             <div className='main-content'>
                 <Row>
+                    <h1>We Make Sure Your New Invention Is Successful</h1>
+                </Row>
+                <Row>
                     <Col>
-                        <h1>We Make Sure Your New Invention is Successful</h1>
                         <p>
                             The Invention Group has helped hundreds of individuals bring their inventions
                             to market. Our role doesn't end once the product evaluation is done. We'll help you

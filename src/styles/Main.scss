@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "BookCover";
+    src: url(../fonts/antique-book-cover.regular.otf);
+};
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(../fonts/Merriweather-Regular.ttf);
+}
+
 .main-content {
     background-image: url(../images/body-bg.jpg);
     margin: 2%;
@@ -6,7 +16,22 @@
 }
 
 h1 {
+    font-family: 'BookCover';
     color: black;
+    font-size: xxx-large;
+    font-weight: 700;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    font-family: 'BookCover';
+}
+
+h4, h5, h6, p, li {
+    font-family: 'Merriweather';
 }
 
 .camera,

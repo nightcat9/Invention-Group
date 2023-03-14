@@ -8,8 +8,10 @@ function HomePage() {
         <Container fluid>
             <div className='main-content'>
                 <Row>
+                    <h1>We Help Get Your New Idea Off the Ground</h1> 
+                </Row>
+                <Row>
                     <Col>
-                        <h1>We Help Get Your New Idea Off the Ground</h1> 
                         <p>
                             If you have a new invention idea, our team can help you make sure that you are
                             very successful when it comes time to sell your new product. We have been 
@@ -24,7 +26,7 @@ function HomePage() {
                         <p>
                             We give you a generous royalty fee for all of your sales.
                         </p>
-                        <h3>Our Guarantee</h3>
+                        <h2>Our Guarantee</h2>
                         <p>
                             We'll put your invention through a thorough evaluation to make sure there's enough
                             interest and the product is ready for market. If our evaluation determines that your
