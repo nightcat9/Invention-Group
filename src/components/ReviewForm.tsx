@@ -14,7 +14,6 @@ export default function FormComponent() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [comment, setComment] = useState("");
-  //const [stars, setStars] = useState("");
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
 
@@ -31,17 +30,6 @@ export default function FormComponent() {
     setComment(e.target.value);
   };
 
-  /* const onChangeStars = (e: any) => {
-    var starNum = e.target.value;
-    if (starNum > 5) {
-      starNum = 5;
-    }
-    if (starNum < 1) {
-      starNum = 1;
-    }
-    setStars(starNum);
-  }*/
-
   const onSubmit = (e: any) => {
     console.log("Form Submitted");
   };
@@ -50,7 +38,6 @@ export default function FormComponent() {
     var reviewDate = new Date();
     var result = {
       reviewTitle: reviewTitle,
-      //stars: stars,
       firstName: firstName,
       lastName: lastName,
       comment: comment,
@@ -59,7 +46,6 @@ export default function FormComponent() {
     }
     handleSubmit(result)
     setReviewTitle("");
-    //setStars("");
     setFirstName("");
     setLastName("");
     setComment("");
@@ -133,16 +119,6 @@ export default function FormComponent() {
             
           </Row>
           <Row>
-            <Col>
-              <Input
-                /*className="rating"
-                type="number"
-                placeholder="Star Rating"
-                value={stars}
-                onChange={onChangeStars}
-                required*/
-              />
-            </Col>
             <Col>
               <Button type="submit" style={{ background: "Green" }}>
                 Submit

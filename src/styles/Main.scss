@@ -41,3 +41,15 @@ h4, h5, h6, p, li {
     width: 100%;
     height: auto;
 }
+
+input {
+    width: 50%;
+}
+
+.searchBox {
+    margin-bottom: 1%;
+    height: 40px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: right;
+}
