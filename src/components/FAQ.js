@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
 import '../styles/Main.scss';
+import SearchBar from './Searchbar';
 
 function FAQPage() {
     return (
@@ -8,7 +9,12 @@ function FAQPage() {
         <Container fluid>
             <div className='main-content'>
                 <Row>
-                    <h1>You've Got Questions, We've Got Answers</h1>
+                    <Col>
+                        <h1>You've Got Questions, We've Got Answers</h1>
+                    </Col>
+                    <Col>
+                        <SearchBar />
+                    </Col>
                 </Row>
                 <Row>
                     <Col>

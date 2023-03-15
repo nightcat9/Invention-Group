@@ -7,7 +7,7 @@ import {
   Input
 } from "reactstrap";
 import handleSubmit from './handlesubmit';
-import StarRating from "./StarRating";
+import '../styles/StarRating.css';
 
 export default function FormComponent() {
   const [reviewTitle, setReviewTitle] = useState("");
@@ -15,6 +15,8 @@ export default function FormComponent() {
   const [lastName, setLastName] = useState("");
   const [comment, setComment] = useState("");
   //const [stars, setStars] = useState("");
+  const [rating, setRating] = useState(0);
+  const [hover, setHover] = useState(0);
 
   const onChangeReviewTitle = (e: any) => {
     setReviewTitle(e.target.value);
@@ -53,6 +55,7 @@ export default function FormComponent() {
       lastName: lastName,
       comment: comment,
       reviewDate: reviewDate,
+      stars: rating,
     }
     handleSubmit(result)
     setReviewTitle("");
@@ -60,13 +63,30 @@ export default function FormComponent() {
     setFirstName("");
     setLastName("");
     setComment("");
+    setRating(0);
   }
 
   return (
     <div className="form-container">
       <Form onSubmit={submithandler}>
         <div className="form-display">
-          <StarRating />
+        <div className="star-rating">
+        {[...Array(5)].map((star, index) => {
+          index += 1;
+          return (
+            <button
+              type="button"
+              key={index}
+              className={index <= (hover || rating) ? "on" : "off"}
+              onClick={() => setRating(index)}
+              onMouseEnter={() => setHover(index)}
+              onMouseLeave={() => setHover(rating)}
+            >
+              <span className="star">&#9733;</span>
+            </button>
+          );
+        })}
+      </div>
           <Input
             className="form-review-title"
             type="text"

@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { NavDropdown } from 'react-bootstrap';
 
 import {
   BrowserRouter as Router,
@@ -36,36 +37,29 @@ function Navigation() {
               <Nav.Link as={Link} to={"/expertise"}>Expertise</Nav.Link>
               <Nav.Link as={Link} to={"/process"}>Process</Nav.Link>
               <Nav.Link as={Link} to={"/services"}>Services</Nav.Link>
-              <Nav.Link as={Link} to={"/faq"}>FAQ</Nav.Link>
-              <Nav.Link as={Link} to={"/blog"}>Blog</Nav.Link>
-              <Nav.Link as={Link} to={"/reviews"}>Reviews</Nav.Link>
-              <Nav.Link as={Link} to={"/careers"}>Careers</Nav.Link>
+              <NavDropdown title="Dropdown" id="nav-dropdown">
+                <NavDropdown.Item as={Link} to={"/faq"}>FAQ</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={"/blog"}>Blog</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={"/reviews"}>Reviews</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={"/careers"}>Careers</NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link as={Link} to={"/contact"}>Contact Us</Nav.Link>
             </Nav>
-            <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       <div>
         <Routes>
-          <Route path="/home" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/expertise" element={<Expertise/>} />
-          <Route path="/process" element={<Process/>} />          
-          <Route path="/services" element={<Services/>} />         
-          <Route path="/faq" element={<FAQ/>} />         
-          <Route path="/blog" element={<Blog/>} />       
-          <Route path="/reviews" element={<Reviews/>} />         
-          <Route path="/careers" element={<Careers/>} />          
-          <Route path="/contact" element={<Contact/>} />       
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/expertise" element={<Expertise />} />
+          <Route path="/process" element={<Process />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
