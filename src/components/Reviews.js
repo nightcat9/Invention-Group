@@ -6,9 +6,9 @@ import { Row, Col } from 'react-bootstrap';
 import Review from './Review.tsx';
 import FormComponent from './ReviewForm.tsx';
 import { findAll } from '../services/reviews';
+import ReactPaginate from 'react-paginate';
 
 function ReviewsPage() {
-
     const [reviews, setReviews] = useState([]);
     const fetchData = async () => {
 

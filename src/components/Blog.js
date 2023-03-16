@@ -8,7 +8,7 @@ function BlogPage() {
         <Container fluid="md">
             <div className='main-content'>
                 <Row>
-                    <h1>Tell Us How to Invent Better</h1>
+                    <h1>Read Tips From Invention Experts</h1>
                 </Row>
                 <Row>
 

@@ -8,7 +8,7 @@ function ServicesPage() {
         <Container fluid="md">
             <div className='main-content'>
                 <Row>
-                    <h1>Tell Us How to Invent Better</h1>
+                    <h1>Submit Your Invention and Let Us Take Care of the Rest</h1>
                 </Row>
                 <Row>
                     <Col>
