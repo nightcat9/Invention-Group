@@ -5,7 +5,7 @@ import SteamPunkGuy from '../images/steampunk-guy.jpg'
 
 function HomePage() {
     return (
-        <Container fluid="md">
+        <Container fluid>
             <div className='main-content'>
                 <Row>
                     <h1>We Help Get Your New Idea Off the Ground</h1> 

@@ -94,7 +94,7 @@ export default function FormComponent() {
           </FormGroup>
           <hr />
           <Row>
-            <Col>
+            <Col md={12} lg={6}>
               <FormGroup>
                 <Label for="firstName">First Name</Label>
                 <Input
@@ -107,7 +107,7 @@ export default function FormComponent() {
                 />
               </FormGroup>
             </Col>
-            <Col>
+            <Col md={12} lg={6}>
               <FormGroup>
                 <Label for="lastName">Last Name</Label>
                 <Input

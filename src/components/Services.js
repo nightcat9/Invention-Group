@@ -5,7 +5,7 @@ import { Row, Col } from 'react-bootstrap';
 function ServicesPage() {
 
     return (
-        <Container fluid="md">
+        <Container fluid>
             <div className='main-content'>
                 <Row>
                     <h1>Submit Your Invention and Let Us Take Care of the Rest</h1>

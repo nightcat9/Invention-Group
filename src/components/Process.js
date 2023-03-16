@@ -4,13 +4,13 @@ import { Row, Col } from 'react-bootstrap';
 
 function ProcessPage() {
     return (
-        <Container fluid="md">
+        <Container fluid>
             <div className='main-content'>
                 <Row>
                     <h1>Our Experts Will Tailor a Plan for Your Success</h1>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col md={12} lg={6}>
                         <p>
                             While each invention is different, we recommend starting with the
                             following steps to begin the process of bringing your invention to market.

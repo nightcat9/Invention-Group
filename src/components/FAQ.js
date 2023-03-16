@@ -23,7 +23,7 @@ function FAQPage() {
         }
     }
     return (
-        <Container fluid="md">
+        <Container fluid>
             <div className='main-content'>
                 <Row>
                     <div className='searchBox'>

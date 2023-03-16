@@ -6,13 +6,13 @@ import '../styles/Main.scss';
 
 function ExpertisePage() {
     return (
-        <Container fluid="md">
+        <Container fluid>
             <div className='main-content'>
                 <Row>
                     <h1>Use Our 30 Years of Experience to Drive Your Success</h1>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col md={12} lg={6}>
 
                         <p>
                             The Invention Group has backed hundreds of new inventions. We have stacked our
@@ -30,16 +30,16 @@ function ExpertisePage() {
                             aspects. We can't and we won't put you through the same process as the last inventor.
                         </p>
                     </Col>
-                    <Col>
+                    <Col md={12} lg={6}>
                         <img src={SpaceTravel} alt="Spaceship" className='spaceship' />
                     </Col>
                 </Row>
                 <br />
                 <Row>
-                    <Col>
+                    <Col md={12} lg={6}>
                         <img src={SteamBike} alt="Steam powered bike" className='steamBike' />
                     </Col>
-                    <Col>
+                    <Col md={12} lg={6}>
                         <h2>Our Promise</h2>
                         <p>
                             We are not another invention marketing company. We do not accept every invention idea. Our rigorous evaluation

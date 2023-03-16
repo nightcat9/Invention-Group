@@ -5,7 +5,7 @@ import { Row, Col } from 'react-bootstrap';
 function BlogPage() {
 
     return (
-        <Container fluid="md">
+        <Container fluid>
             <div className='main-content'>
                 <Row>
                     <h1>Read Tips From Invention Experts</h1>

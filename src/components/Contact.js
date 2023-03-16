@@ -4,7 +4,7 @@ import '../styles/Main.scss';
 
 function ContactPage() {
     return (
-        <Container fluid="md">
+        <Container fluid>
             <div className='main-content'>
                 <Row>
                     <h1>Connect With Us Today</h1>
