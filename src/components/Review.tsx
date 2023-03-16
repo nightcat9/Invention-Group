@@ -25,7 +25,7 @@ function Review({
 }) {
   var dateString = "Unidentified date"
   if (reviewDate){
-    //new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})
+    
     dateString = reviewDate.toDate().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
   }
   return (

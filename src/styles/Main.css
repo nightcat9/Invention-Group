@@ -38,6 +38,7 @@ h4, h5, h6, p, li {
 .steamPunkGuy {
   width: 100%;
   height: auto;
+  border-radius: 3px;
 }
 
 input {
