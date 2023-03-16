@@ -11,7 +11,7 @@ function HomePage() {
                     <h1>We Help Get Your New Idea Off the Ground</h1> 
                 </Row>
                 <Row>
-                    <Col>
+                    <Col md={12} lg={6}>
                         <p>
                             If you have a new invention idea, our team can help you make sure that you are
                             very successful when it comes time to sell your new product. We have been 
@@ -36,7 +36,7 @@ function HomePage() {
                             Click here to request your free invention evaluation.
                         </p>
                     </Col>
-                    <Col>
+                    <Col md={12} lg={6}>
                         <img src={SteamPunkGuy} alt="man dressed in steampunk attire" className='steamPunkGuy' />
                     </Col>
                 </Row>  
