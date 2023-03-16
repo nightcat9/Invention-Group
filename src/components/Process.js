@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 
 function ProcessPage() {
     return (
-        <Container fluid>
+        <Container fluid="md">
             <div className='main-content'>
                 <Row>
                     <h1>Our Experts Will Tailor a Plan for Your Success</h1>

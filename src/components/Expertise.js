@@ -6,7 +6,7 @@ import '../styles/Main.scss';
 
 function ExpertisePage() {
     return (
-        <Container fluid>
+        <Container fluid="md">
             <div className='main-content'>
                 <Row>
                     <h1>Use Our 30 Years of Experience to Drive Your Success</h1>
@@ -34,6 +34,7 @@ function ExpertisePage() {
                         <img src={SpaceTravel} alt="Spaceship" className='spaceship' />
                     </Col>
                 </Row>
+                <br />
                 <Row>
                     <Col>
                         <img src={SteamBike} alt="Steam powered bike" className='steamBike' />

@@ -2,6 +2,8 @@ import { useState } from "react";
 import {
   Button,
   Form,
+  FormGroup,
+  Label,
   Row,
   Col,
   Input
@@ -56,71 +58,89 @@ export default function FormComponent() {
     <div className="form-container">
       <Form onSubmit={submithandler}>
         <div className="form-display">
-        <div className="star-rating">
-        {[...Array(5)].map((star, index) => {
-          index += 1;
-          return (
-            <button
-              type="button"
-              key={index}
-              className={index <= (hover || rating) ? "on" : "off"}
-              onClick={() => setRating(index)}
-              onMouseEnter={() => setHover(index)}
-              onMouseLeave={() => setHover(rating)}
-            >
-              <span className="star">&#9733;</span>
-            </button>
-          );
-        })}
-      </div>
-          <Input
-            className="form-review-title"
-            type="text"
-            name="text"
-            id="reviewTitle"
-            placeholder="Review Title"
-            value={reviewTitle}
-            onChange={onChangeReviewTitle}
-            required
-          />
-          <Row>
-            <Col>
-              <Input
-                className="firstName"
-                type="text"
-                placeholder="First Name"
-                value={firstName}
-                onChange={onChangeFirstName}
-                required
-              />
-            </Col>
-            <Col>
-              <Input
-                className="lastName"
-                type="text"
-                placeholder="Last Name"
-                value={lastName}
-                onChange={onChangeLastName}
-                required
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
+          <FormGroup>
+            <Label for="rating">Rating</Label>
+            <div className="star-rating">
+              {[...Array(5)].map((star, index) => {
+                index += 1;
+                return (
+                  <button
+                    type="button"
+                    key={index}
+                    className={index <= (hover || rating) ? "on" : "off"}
+                    onClick={() => setRating(index)}
+                    onMouseEnter={() => setHover(index)}
+                    onMouseLeave={() => setHover(rating)}
+                  >
+                    <span className="star">&#9733;</span>
+                  </button>
+                );
+              })}
+            </div>
+          </FormGroup>
+          <hr />
+          <FormGroup>
+            <Label for="reviewTitle">Add a Headline</Label>
             <Input
-              className="comment"
-              type="textarea"
-              placeholder="Enter your review comment"
-              value={comment}
-              onChange={onChange}
+              className="form-review-title"
+              type="text"
+              name="text"
+              id="reviewTitle"
+              placeholder="Review Title"
+              value={reviewTitle}
+              onChange={onChangeReviewTitle}
               required
             />
+          </FormGroup>
+          <hr />
+          <Row>
+            <Col>
+              <FormGroup>
+                <Label for="firstName">First Name</Label>
+                <Input
+                  className="firstName"
+                  type="text"
+                  placeholder="First Name"
+                  value={firstName}
+                  onChange={onChangeFirstName}
+                  required
+                />
+              </FormGroup>
             </Col>
-            
+            <Col>
+              <FormGroup>
+                <Label for="lastName">Last Name</Label>
+                <Input
+                  className="lastName"
+                  type="text"
+                  placeholder="Last Name"
+                  value={lastName}
+                  onChange={onChangeLastName}
+                  required
+                />
+              </FormGroup>
+              <hr />
+            </Col>
           </Row>
           <Row>
             <Col>
-              <Button type="submit" style={{ background: "Green" }}>
+              <FormGroup>
+                <Label for="comment">Add a Written Review</Label>
+                <Input
+                  className="comment"
+                  type="textarea"
+                  placeholder="What did you like or dislike about our services?"
+                  value={comment}
+                  onChange={onChange}
+                  required
+                />
+              </FormGroup>
+              <hr />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Button type="submit" id="reviewSubmit" style={{ background: "#fbb040" }}>
                 Submit
               </Button>
             </Col>

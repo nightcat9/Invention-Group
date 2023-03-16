@@ -53,3 +53,13 @@ input {
     display: flex;
     justify-content: right;
 }
+
+label {
+    font-weight: bold;
+}
+
+#reviewSubmit {
+    color: black;
+    border: none;
+    float: right;
+}

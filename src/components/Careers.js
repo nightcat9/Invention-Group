@@ -5,7 +5,7 @@ import { Row, Col } from 'react-bootstrap';
 function CareersPage() {
 
     return (
-        <Container fluid>
+        <Container fluid="md">
             <div className='main-content'>
                 <Row>
                     <h1>The Invention Group &mdash; Career Opportunities</h1>

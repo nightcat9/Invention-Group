@@ -6,7 +6,7 @@ import '../styles/Main.scss';
 
 function AboutPage() {
     return (
-        <Container fluid>
+        <Container fluid="md">
             <div className='main-content'>
                 <Row>
                     <h1>We Make Sure Your New Invention Is Successful</h1>

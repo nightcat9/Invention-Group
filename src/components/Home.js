@@ -5,7 +5,7 @@ import SteamPunkGuy from '../images/steampunk-guy.jpg'
 
 function HomePage() {
     return (
-        <Container fluid>
+        <Container fluid="md">
             <div className='main-content'>
                 <Row>
                     <h1>We Help Get Your New Idea Off the Ground</h1> 
@@ -39,8 +39,7 @@ function HomePage() {
                     <Col>
                         <img src={SteamPunkGuy} alt="man dressed in steampunk attire" className='steamPunkGuy' />
                     </Col>
-                </Row>
-                
+                </Row>  
             </div>
         </Container>
         

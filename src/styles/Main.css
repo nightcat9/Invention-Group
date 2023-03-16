@@ -38,4 +38,26 @@ h4, h5, h6, p, li {
 .steamPunkGuy {
   width: 100%;
   height: auto;
+}
+
+input {
+  width: 50%;
+}
+
+.searchBox {
+  margin-bottom: 1%;
+  height: 40px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: right;
+}
+
+label {
+  font-weight: bold;
+}
+
+#reviewSubmit {
+  color: black;
+  border: none;
+  float: right;
 }/*# sourceMappingURL=Main.css.map */

@@ -4,13 +4,13 @@ import '../styles/Main.scss';
 
 function ContactPage() {
     return (
-        <div className='main-content'>
-            <Container fluid>
+        <Container fluid="md">
+            <div className='main-content'>
                 <Row>
                     <h1>Connect With Us Today</h1>
                 </Row>
-            </Container>
-        </div>
+            </div>
+        </Container>
     );
 }
 
