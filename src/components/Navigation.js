@@ -19,7 +19,9 @@ import FAQ from "./FAQ";
 import Blog from "./Blog";
 import Reviews from "./Reviews";
 import Careers from "./Careers";
+import Disclosure from "./Disclosure";
 import Contact from "./Contact";
+import Login from "./Login";
 
 
 function Navigation() {
@@ -40,10 +42,12 @@ function Navigation() {
                 <NavDropdown.Item as={Link} to={"/blog"}>Blog</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to={"/reviews"}>Reviews</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to={"/careers"}>Careers</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={"/disclosure"}>Disclosure</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={Link} to={"/contact"}>Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
+          <Login />
         </Container>
       </Navbar>
       <div>
@@ -57,6 +61,7 @@ function Navigation() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/disclosure" element={<Disclosure />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

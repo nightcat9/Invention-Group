@@ -32,9 +32,6 @@ export default function FormComponent() {
     setComment(e.target.value);
   };
 
-  const onSubmit = (e: any) => {
-    console.log("Form Submitted");
-  };
   const submithandler = (e) => {
     e.preventDefault()
     var reviewDate = new Date();
@@ -45,6 +42,7 @@ export default function FormComponent() {
       comment: comment,
       reviewDate: reviewDate,
       stars: rating,
+      db: "review",
     }
     handleSubmit(result)
     setReviewTitle("");

@@ -6,6 +6,10 @@
   font-family: "Merriweather";
   src: url(../fonts/Merriweather-Regular.ttf);
 }
+@font-face {
+  font-family: "Algerian";
+  src: url(../fonts/Algerian-Regular.ttf);
+}
 .main-content {
   background-image: url(../images/body-bg.jpg);
   margin: 2%;
@@ -14,10 +18,44 @@
 }
 
 h1 {
-  font-family: "BookCover";
-  color: black;
-  font-size: xxx-large;
-  font-weight: 700;
+  font-family: "Algerian";
+}
+
+.homeHeader {
+  position: relative;
+  text-align: center;
+}
+
+.wright-airplane {
+  width: 100%;
+}
+
+.centered-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Extra small devices (phones, less than 768px) */
+  font-size: 1.875rem;
+  /* Small devices (tablets, 768px and up) */
+  /* Medium devices (desktops, 992px and up) */
+  /* Large devices (large desktops, 1200px and up) */
+}
+@media (min-width: 768px) {
+  .centered-text {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .centered-text {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 1200px) {
+  .centered-text {
+    font-size: 3.8rem;
+  }
 }
 
 h2 {
@@ -61,4 +99,17 @@ label {
   color: black;
   border: none;
   float: right;
+}
+
+.subscribe {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }/*# sourceMappingURL=Main.css.map */
