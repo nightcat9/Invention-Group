@@ -94,7 +94,7 @@ function LoginPage() {
                                 <Label for="password">Password</Label>
                                 <Input
                                     className="password"
-                                    type="text"
+                                    type="password"
                                     placeholder="Password"
                                     value={password}
                                     onChange={onChangePassword}

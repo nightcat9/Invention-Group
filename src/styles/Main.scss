@@ -1,7 +1,7 @@
 @font-face {
     font-family: "BookCover";
     src: url(../fonts/antique-book-cover.regular.otf);
-};
+}
 
 @font-face {
     font-family: "Merriweather";
@@ -13,6 +13,13 @@
     src: url(../fonts/Algerian-Regular.ttf);
 }
 
+.notAnotherDiv {
+    background-image: url(../images/invention-bg-dark.jpg);
+    min-height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+
 .main-content {
     background-image: url(../images/body-bg.jpg);
     margin: 2%;
@@ -22,7 +29,10 @@
 
 h1 {
     font-family: "Algerian";
-    
+}
+
+h1.hero-text {
+    font-size: 3rem;
 }
 
 .homeHeader {
@@ -34,48 +44,60 @@ h1 {
     width: 100%;
 }
 
+.top-left {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    color: white;
+}
+
 .centered-text {
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-        /* Extra small devices (phones, less than 768px) */
-        font-size: 1.875rem;
-        
-        /* Small devices (tablets, 768px and up) */
-        @media (min-width: 768px) {
-          font-size: 2.5rem;
-        }
-      
-        /* Medium devices (desktops, 992px and up) */
-        @media (min-width: 992px) {
-          font-size: 3.125rem;
-        }
-      
-        /* Large devices (large desktops, 1200px and up) */
-        @media (min-width: 1200px) {
-          font-size: 3.8rem;
-        }
-      
+    transform: translate(-50%, -50%);
+    /* Extra small devices (phones, less than 768px) */
+    font-size: 1.875rem;
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        font-size: 3.125rem;
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+        font-size: 3.8rem;
+    }
+
 }
 
 h2 {
     text-transform: uppercase;
 }
 
-h2, h3 {
-    font-family: 'BookCover';
+h2,
+h3 {
+    font-family: 'Algerian';
 }
 
-h4, h5, h6, p, li {
+h4,
+h5,
+h6,
+p,
+li {
     font-family: 'Merriweather';
 }
 
 .camera,
-.steamBike, 
+.steamBike,
 .spaceship,
-.steamPunkGuy  {
+.steamPunkGuy {
     width: 100%;
     height: auto;
     border-radius: 3px;

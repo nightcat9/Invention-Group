@@ -21,7 +21,8 @@ function ReviewsPage() {
     }, [])
 
     return (
-        <Container fluid>
+        <div className='notAnotherDiv'>
+            <Container fluid>
             <div className='main-content'>
                 <Row>
                     <h1>Have You Worked With Us? Rate Your Experience!</h1>
@@ -43,6 +44,8 @@ function ReviewsPage() {
                 </Row>
             </div>
         </Container>
+        </div>
+        
 
     );
 }
