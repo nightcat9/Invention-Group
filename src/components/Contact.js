@@ -27,7 +27,7 @@ function ContactPage() {
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
-    const [projectDescription, setProjectDescription] =  useState("");
+    const [projectDescription, setProjectDescription] = useState("");
 
     const onChangeFirstName = (e) => {
         setFirstName(e.target.value);
@@ -70,98 +70,102 @@ function ContactPage() {
                         <h1>Connect With Us Today</h1>
                     </Row>
                     <Row>
-                        <Col>
+                        <Col md={12} lg={4}>
                             <h2>Contact Information</h2>
                             <p><AiFillPhone fontSize={26} /> 262-123-4567</p>
                             <p><AiFillMail fontSize={26} /> inventiongroup@gmail.com</p>
                             <p><TiLocation fontSize={26} /> 123 Graduation Lane<br />Waukesha, WI 53188</p>
                         </Col>
-                        <Col>
-                            <Form onSubmit={onQuoteRequestSubmit}>
-                                <div className="form-display">
-                                    <Row>
-                                        <Col md={12} lg={6}>
-                                            <FormGroup>
-                                                <Label for="firstName">* First Name</Label>
-                                                <Input
-                                                    className="firstName"
-                                                    type="text"
-                                                    placeholder="First Name"
-                                                    value={firstName}
-                                                    onChange={onChangeFirstName}
-                                                    required
-                                                />
-                                            </FormGroup>
-                                        </Col>
-                                        <Col md={12} lg={6}>
-                                            <FormGroup>
-                                                <Label for="lastName">* Last Name</Label>
-                                                <Input
-                                                    className="lastName"
-                                                    type="text"
-                                                    placeholder="Last Name"
-                                                    value={lastName}
-                                                    onChange={onChangeLastName}
-                                                    required
-                                                />
-                                            </FormGroup>
+                        <Col md={12} lg={8}>
+                            <div className='quote-form'>
+                                <h2>Contact us for a quote</h2>
+                                <Form onSubmit={onQuoteRequestSubmit}>
+                                    <div className="form-display">
+                                        <Row>
+                                            <Col xs={12} lg={6}>
+                                                <FormGroup>
+                                                    <Label for="firstName">* First Name</Label>
+                                                    <Input
+                                                        className="firstName"
+                                                        type="text"
+                                                        placeholder="First Name"
+                                                        value={firstName}
+                                                        onChange={onChangeFirstName}
+                                                        required
+                                                    />
+                                                </FormGroup>
+                                            </Col>
+                                            <Col xs={12} lg={6}>
+                                                <FormGroup>
+                                                    <Label for="lastName">* Last Name</Label>
+                                                    <Input
+                                                        className="lastName"
+                                                        type="text"
+                                                        placeholder="Last Name"
+                                                        value={lastName}
+                                                        onChange={onChangeLastName}
+                                                        required
+                                                    />
+                                                </FormGroup>
+                                            </Col>
                                             <hr />
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col md={12} lg={6}>
-                                            <FormGroup>
-                                                <Label for="email">* Email</Label>
-                                                <Input
-                                                    className="email"
-                                                    type="email"
-                                                    placeholder="email@example.com"
-                                                    value={email}
-                                                    onChange={onChangeEmail}
-                                                    required
-                                                />
-                                            </FormGroup>
-                                        </Col>
-                                        <Col md={12} lg={6}>
-                                            <FormGroup>
-                                                <Label for="phoneNumber">* Phone Number</Label>
-                                                <Input
-                                                    className="phoneNumber"
-                                                    type="tel"
-                                                    placeholder="Phone Number"
-                                                    value={phoneNumber}
-                                                    onChange={onChangePhoneNumber}
-                                                    required
-                                                />
-                                            </FormGroup>
+                                        </Row>
+                                        <Row>
+                                            <Col xs={12} lg={6}>
+                                                <FormGroup>
+                                                    <Label for="email">* Email</Label>
+                                                    <Input
+                                                        className="email"
+                                                        type="email"
+                                                        placeholder="email@example.com"
+                                                        value={email}
+                                                        onChange={onChangeEmail}
+                                                        required
+                                                    />
+                                                </FormGroup>
+                                            </Col>
+                                            <Col xs={12} lg={6}>
+                                                <FormGroup>
+                                                    <Label for="phoneNumber">* Phone Number</Label>
+                                                    <Input
+                                                        className="phoneNumber"
+                                                        type="tel"
+                                                        placeholder="Phone Number"
+                                                        value={phoneNumber}
+                                                        onChange={onChangePhoneNumber}
+                                                        required
+                                                    />
+                                                </FormGroup>
+                                            </Col>
                                             <hr />
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>
-                                            <FormGroup>
-                                                <Label for="projectDescription">Give a quick overview of your project:</Label>
-                                                <Input
-                                                    className="projectDescription"
-                                                    type="textarea"
-                                                    placeholder=""
-                                                    value={projectDescription}
-                                                    onChange={onChangeProjectDescription}
-                                                    required
-                                                />
-                                            </FormGroup>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <FormGroup>
+                                                    <Label for="projectDescription">Give a quick overview of your project:</Label>
+                                                    <Input
+                                                        className="projectDescription"
+                                                        type="textarea"
+                                                        placeholder=""
+                                                        value={projectDescription}
+                                                        onChange={onChangeProjectDescription}
+                                                        required
+                                                    />
+                                                </FormGroup>
+                                            </Col>
                                             <hr />
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>
-                                            <Button type="submit" id="quoteRequestSubmit" style={{ background: "#fbb040" }}>
-                                                Submit
-                                            </Button>
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Form>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <Button type="submit" id="quoteRequestSubmit" style={{ background: "#fbb040" }}>
+                                                    Submit
+                                                </Button>
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                </Form>
+                            </div>
+
                         </Col>
                     </Row>
                 </div>

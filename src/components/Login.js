@@ -3,29 +3,29 @@ import { Button } from "react-bootstrap";
 import { Form, FormGroup, Label, Input } from 'reactstrap';
 import handleSubmit from './handlesubmit';
 import { findAllUsers } from '../services/users';
+import '../styles/Main.scss';
 
 function LoginPage() {
     // This is for handling local storage
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [users, setUsers] = useState([]);
+    console.log("users on render", users)
 
     useEffect(() => {
-        const fetchData = async () => {
-
-            const res = await findAllUsers()
-            setUsers([...res])
-            var memberName = localStorage.getItem("username");
-            var memberPass = localStorage.getItem("password");
-            // console.log(memberName)
-            // console.log(memberPass)
-            // console.log(users)
-            setIsLoggedIn(users.some(user => user.username === memberName &&
-                user.password === memberPass))
-
-        }
-        fetchData().catch(console.error)
-
-    }, [users])
+        const fetchData = () => {
+            findAllUsers().then((dbUsers) => {
+                    setUsers([...dbUsers])
+                    var memberName = localStorage.getItem("username");
+                    var memberPass = localStorage.getItem("password");
+                    if(memberName != null && memberPass != null) {
+                        setIsLoggedIn(dbUsers.some(user => user.username === memberName &&
+                            user.password === memberPass))
+                    }
+                }
+            )
+        };
+        fetchData();
+    }, []);
 
     // Useful variables 
     const [showLogin, setShowLogin] = useState(false);
@@ -68,6 +68,7 @@ function LoginPage() {
         localStorage.removeItem("password");
         setIsLoggedIn(false);
     };
+
     return (
         <div className="loginPage">
             {isLoggedIn ? (
@@ -104,6 +105,7 @@ function LoginPage() {
                             <Button type="submit" id="registrationSubmit" style={{ background: "#fbb040" }}>
                                 Submit
                             </Button>
+                            <Button onClick={() => setShowRegister(false)}>Nevermind</Button>
                         </Form>
                     ) : (
                         <div>
@@ -133,6 +135,7 @@ function LoginPage() {
                                     <Button type="submit" id="loginSubmit" style={{ background: "#fbb040" }}>
                                         Login
                                     </Button>
+                                    <Button onClick={() => setShowLogin(false)}>Nevermind</Button>
                                 </Form>
                             ) : (
                                 <div>
