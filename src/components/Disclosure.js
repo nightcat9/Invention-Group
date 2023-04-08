@@ -6,7 +6,7 @@ function DisclosurePage() {
 
     return (
         <div className='notAnotherDiv'>
-            <Container fluid>
+            <Container fluid="md">
                 <div className='main-content'>
                     <Row>
                         <h1>Disclaimer</h1>

@@ -22,7 +22,7 @@ function ReviewsPage() {
 
     return (
         <div className='notAnotherDiv'>
-            <Container fluid>
+            <Container fluid="md">
             <div className='main-content'>
                 <Row>
                     <h1>Have You Worked With Us? Rate Your Experience!</h1>

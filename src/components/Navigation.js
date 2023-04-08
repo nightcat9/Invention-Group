@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavDropdown } from 'react-bootstrap';
+import { BsPersonFill } from "react-icons/bs";
 
 import {
   BrowserRouter as Router,
@@ -21,7 +22,7 @@ import Reviews from "./Reviews";
 import Careers from "./Careers";
 import Disclosure from "./Disclosure";
 import Contact from "./Contact";
-import Login from "./Login";
+
 
 
 function Navigation() {
@@ -45,9 +46,9 @@ function Navigation() {
                 <NavDropdown.Item as={Link} to={"/disclosure"}>Disclosure</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={Link} to={"/contact"}>Contact Us</Nav.Link>
+              
             </Nav>
           </Navbar.Collapse>
-          <Login />
         </Container>
       </Navbar>
       <div>

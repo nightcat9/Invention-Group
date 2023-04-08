@@ -1,19 +1,19 @@
 import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
-import Camera from '../images/camera.jpg';
+import Camera from '../images/camera-rendered.jpg';
 import '../styles/Main.scss';
 
 
 function AboutPage() {
     return (
         <div className='notAnotherDiv'>
-            <Container fluid>
+            <Container fluid="md">
                 <div className='main-content'>
                     <Row>
                         <h1>We Make Sure Your New Invention Is Successful</h1>
                     </Row>
                     <Row>
-                        <Col md={12} lg={6}>
+                        <Col md={12} lg={7}>
                             <p>
                                 The Invention Group has helped hundreds of individuals bring their inventions
                                 to market. Our role doesn't end once the product evaluation is done. We'll help you
@@ -44,7 +44,7 @@ function AboutPage() {
                                 Lets get started! Click here to request your free invention evaluation.
                             </p>
                         </Col>
-                        <Col md={12} lg={6}>
+                        <Col md={12} lg={5}>
                             <img src={Camera} alt="old fashioned camera with photos and leather bag" className='camera' />
                         </Col>
                     </Row>

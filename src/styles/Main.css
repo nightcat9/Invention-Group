@@ -7,16 +7,17 @@
   src: url(../fonts/Merriweather-Regular.ttf);
 }
 @font-face {
-  font-family: "Algerian";
-  src: url(../fonts/Algerian-Regular.ttf);
+  font-family: "BrimNarrow";
+  src: url(../fonts/BrimNarrow-Face.ttf);
 }
-.notAnotherDiv {
-  background-image: url(../images/invention-bg-dark.jpg);
-  min-height: 100vh;
-  position: absolute;
-  width: 100%;
+@font-face {
+  font-family: "BrimNarrowCombined";
+  src: url(../fonts/BrimNarrow-Combined1.ttf);
 }
-
+@font-face {
+  font-family: "BrimNarrowCombined2";
+  src: url(../fonts/BrimNarrow-Combined2.ttf);
+}
 .main-content {
   background-image: url(../images/body-bg.jpg);
   margin: 2%;
@@ -24,12 +25,50 @@
   border-radius: 10px;
 }
 
+p, li {
+  font-family: "DM Serif Text", serif;
+  font-size: 1.2rem;
+}
+
+a {
+  font-family: "Bree Serif", serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 h1 {
-  font-family: "Algerian";
+  font-family: "BrimNarrowCombined";
+  color: #261710;
 }
 
 h1.hero-text {
-  font-size: 3rem;
+  color: white;
+  /* Extra small devices (phones, less than 768px) */
+  font-size: 1.875rem;
+  /* Small devices (tablets, 768px and up) */
+  /* Medium devices (desktops, 992px and up) */
+  /* Large devices (large desktops, 1200px and up) */
+}
+@media (min-width: 768px) {
+  h1.hero-text {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 992px) {
+  h1.hero-text {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 1200px) {
+  h1.hero-text {
+    font-size: 3.5rem;
+  }
+}
+
+h2,
+h3 {
+  font-family: "BrimNarrow";
+  color: #261710;
 }
 
 .homeHeader {
@@ -48,48 +87,9 @@ h1.hero-text {
   color: white;
 }
 
-.centered-text {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Extra small devices (phones, less than 768px) */
-  font-size: 1.875rem;
-  /* Small devices (tablets, 768px and up) */
-  /* Medium devices (desktops, 992px and up) */
-  /* Large devices (large desktops, 1200px and up) */
-}
-@media (min-width: 768px) {
-  .centered-text {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .centered-text {
-    font-size: 3.125rem;
-  }
-}
-@media (min-width: 1200px) {
-  .centered-text {
-    font-size: 3.8rem;
-  }
-}
-
-h2 {
-  text-transform: uppercase;
-}
-
-h2,
-h3 {
-  font-family: "Algerian";
-}
-
 h4,
 h5,
-h6,
-p,
-li {
+h6 {
   font-family: "Merriweather";
 }
 
@@ -140,4 +140,29 @@ label {
 .quote-form {
   border-left: 1px solid #333;
   padding-left: 4%;
+}
+
+.footer {
+  background-color: #FAF9F6;
+  margin-top: 5%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer a {
+  color: rgba(0, 0, 0, 0.55);
+  transition: all 1s ease;
+}
+
+.footer-nav {
+  padding-top: 2%;
 }/*# sourceMappingURL=Main.css.map */

@@ -1,4 +1,11 @@
 .logo-center {
   height: 40vmin;
   pointer-events: none;
+}
+
+.App {
+  background-image: url(../src/images/invention-bg-dark.jpg);
+  min-height: 100vh;
+  position: absolute;
+  width: 100%;
 }/*# sourceMappingURL=App.css.map */

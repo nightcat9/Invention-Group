@@ -24,7 +24,7 @@ function FAQPage() {
     }
     return (
         <div className='notAnotherDiv'>
-            <Container fluid>
+            <Container fluid="md">
                 <div className='main-content'>
                     <Row>
                         <div className='searchBox'>

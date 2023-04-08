@@ -1,19 +1,19 @@
 import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
-import SteamBike from '../images/steam-bike.jpg';
-import SpaceTravel from '../images/space-travel.jpg';
+import SteamBike from '../images/steam-bike-rendered.jpg';
+import SpaceTravel from '../images/space-travel-rendered.jpg';
 import '../styles/Main.scss';
 
 function ExpertisePage() {
     return (
         <div className='notAnotherDiv'>
-            <Container fluid>
+            <Container fluid="md">
                 <div className='main-content'>
                     <Row>
                         <h1>Use Our 30 Years of Experience to Drive Your Success</h1>
                     </Row>
                     <Row>
-                        <Col md={12} lg={6}>
+                        <Col md={12} lg={7}>
 
                             <p>
                                 The Invention Group has backed hundreds of new inventions. We have stacked our
@@ -31,16 +31,16 @@ function ExpertisePage() {
                                 aspects. We can't and we won't put you through the same process as the last inventor.
                             </p>
                         </Col>
-                        <Col md={12} lg={6}>
+                        <Col md={12} lg={5}>
                             <img src={SpaceTravel} alt="Spaceship" className='spaceship' />
                         </Col>
                     </Row>
                     <br />
                     <Row>
-                        <Col md={12} lg={6}>
+                        <Col md={12} lg={5}>
                             <img src={SteamBike} alt="Steam powered bike" className='steamBike' />
                         </Col>
-                        <Col md={12} lg={6}>
+                        <Col md={12} lg={7}>
                             <h2>Our Promise</h2>
                             <p>
                                 We are not another invention marketing company. We do not accept every invention idea. Our rigorous evaluation
@@ -60,6 +60,8 @@ function ExpertisePage() {
                 </div>
             </Container>
         </div>
+
+
 
     );
 }
