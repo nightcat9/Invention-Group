@@ -1,14 +1,18 @@
 import Container from 'react-bootstrap/Container';
+import { useState, useEffect } from 'react';
+import { auth } from '../firebase_setup/firebase';
+import { onAuthStateChanged } from 'firebase/auth';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavDropdown } from 'react-bootstrap';
 import { BsPersonFill } from "react-icons/bs";
+import { AuthProvider } from './AuthContext';
 
 import {
   BrowserRouter as Router,
   Route,
   Link,
-  Routes
+  Routes,
 } from "react-router-dom";
 
 import Home from "./Home";
@@ -22,50 +26,70 @@ import Reviews from "./Reviews";
 import Careers from "./Careers";
 import Disclosure from "./Disclosure";
 import Contact from "./Contact";
-
+import Login from './Login';
+import Register from './Register';
+import VerifyEmail from './VerifyEmail';
+import Profile from './Profile';
 
 
 function Navigation() {
+  const [currentUser, setCurrentUser] = useState(null);
+  const [timeActive, setTimeActive] = useState(false);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setCurrentUser(user)
+    })
+  }, [])
+
   return (
     <Router>
-      <Navbar bg="light" expand="lg">
-        <Container fluid>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-              <Nav.Link as={Link} to={"home"}>Home</Nav.Link>
-              <Nav.Link as={Link} to={"/about"}>About Us</Nav.Link>
-              <Nav.Link as={Link} to={"/expertise"}>Expertise</Nav.Link>
-              <Nav.Link as={Link} to={"/process"}>Process</Nav.Link>
-              <Nav.Link as={Link} to={"/services"}>Services</Nav.Link>
-              <NavDropdown title="Resources" id="nav-dropdown">
-                <NavDropdown.Item as={Link} to={"/faq"}>FAQ</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to={"/blog"}>Blog</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to={"/reviews"}>Reviews</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to={"/careers"}>Careers</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to={"/disclosure"}>Disclosure</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link as={Link} to={"/contact"}>Contact Us</Nav.Link>
-              
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      <div>
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/expertise" element={<Expertise />} />
-          <Route path="/process" element={<Process />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/reviews" element={<Reviews />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/disclosure" element={<Disclosure />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
+      <AuthProvider value={{ currentUser, timeActive, setTimeActive }}>
+        <Navbar bg="light" expand="lg">
+          <Container fluid>
+            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Collapse id="navbarScroll">
+              <Nav className="me-auto my-2 my-lg-0" navbarScroll>
+                <Nav.Link as={Link} to={"home"}>Home</Nav.Link>
+                <Nav.Link as={Link} to={"/about"}>About Us</Nav.Link>
+                <Nav.Link as={Link} to={"/expertise"}>Expertise</Nav.Link>
+                <Nav.Link as={Link} to={"/process"}>Process</Nav.Link>
+                <Nav.Link as={Link} to={"/services"}>Services</Nav.Link>
+                <NavDropdown title="Resources" id="nav-dropdown">
+                  <NavDropdown.Item as={Link} to={"/faq"}>FAQ</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to={"/blog"}>Blog</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to={"/reviews"}>Reviews</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to={"/careers"}>Careers</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to={"/disclosure"}>Disclosure</NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link as={Link} to={"/contact"}>Contact Us</Nav.Link>
+                <Nav.Link as={Link} to={"/login"}>Login</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+        <div>
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/expertise" element={<Expertise />} />
+            <Route path="/process" element={<Process />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/reviews" element={<Reviews />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/disclosure" element={<Disclosure />} />
+            <Route path="/contact" element={<Contact />} />
+
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path='/verify-email' element={<VerifyEmail />} />
+
+          </Routes>
+        </div>
+      </AuthProvider>
     </Router>
   );
 }

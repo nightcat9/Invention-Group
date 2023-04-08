@@ -2,9 +2,9 @@ import {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { useAuthValue } from "./AuthContext";
 import {signInWithEmailAndPassword, sendEmailVerification} from 'firebase/auth';
-import {auth} from './firebase';
-import {useHistory} from 'react-router-dom';
-import './forms.css';
+import {auth} from '../firebase_setup/firebase';
+import {useNavigate} from 'react-router-dom';
+import '../styles/forms.css';
 
 function Login(){
 
@@ -15,7 +15,7 @@ function Login(){
   const {currentUser} = useAuthValue()
   console.log(currentUser)
   const {setTimeActive} = useAuthValue()
-  const history = useHistory()
+  const navigate = useNavigate()
   const login = e => {
     e.preventDefault()
     signInWithEmailAndPassword(auth, email, password)
@@ -24,11 +24,11 @@ function Login(){
         sendEmailVerification(auth.currentUser)
         .then(() => {
           setTimeActive(true)
-          history.push('/verify-email')
+          navigate('/verify-email')
         })
       .catch(err => alert(err.message))
     }else{
-      history.push('/')
+      navigate('/profile')
     }
     })
     .catch(err => setError(err.message))
