@@ -25,9 +25,8 @@
 
 // BREAKS FOOTER LAYOUT
 
-
 .main-content {
-    background-image: url(../images/body-bg.jpg);
+    background-color: #e9e0d4;
     margin: 2%;
     padding: 2% 5%;
     border-radius: 10px;
@@ -74,7 +73,10 @@ h1.hero-text {
 }
 
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     font-family: "BrimNarrow";
     color: #261710;
 }
@@ -93,13 +95,6 @@ h3 {
     top: 50px;
     left: 16px;
     color: white;
-}
-
-
-h4,
-h5,
-h6 {
-    font-family: 'Merriweather';
 }
 
 .camera,

@@ -1,7 +1,5 @@
 .auth {
   width: 90%;
-  max-width: 400px;
-  border: 1px solid #dcdcdc;
   padding: 20px;
   text-align: center;
 }
@@ -11,6 +9,9 @@
   flex-direction: column;
   gap: 15px;
   margin: 0 auto 10px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .auth__success {
@@ -29,4 +30,22 @@
   height: 40px;
   font-size: 16px;
   padding: 0 10px;
+  border-radius: 3px;
+}
+
+.main-content {
+  background-color: #e9e0d4;
+  margin: 2%;
+  padding: 2% 5%;
+  border-radius: 10px;
+}
+
+.loginbtn, .registerbtn {
+  background-color: rgb(251, 176, 64);
+  font-family: "DM Serif Text", serif;
+}
+
+.loginform, .registerform {
+  width: 100%;
+  font-family: "DM Serif Text", serif;
 }/*# sourceMappingURL=forms.css.map */

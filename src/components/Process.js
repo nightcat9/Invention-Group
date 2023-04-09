@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 
 function ProcessPage() {
     return (
-        <div className='notAnotherDiv'>
+        
             <Container fluid="md">
                 <div className='main-content'>
                     <Row>
@@ -60,7 +60,7 @@ function ProcessPage() {
                     </Row>
                 </div>
             </Container>
-        </div>
+        
 
     );
 }

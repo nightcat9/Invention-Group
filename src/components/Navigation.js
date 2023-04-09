@@ -63,7 +63,7 @@ function Navigation() {
                   <NavDropdown.Item as={Link} to={"/disclosure"}>Disclosure</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link as={Link} to={"/contact"}>Contact Us</Nav.Link>
-                <Nav.Link as={Link} to={"/login"}>Login</Nav.Link>
+                <Nav.Link as={Link} to={"/login"}><BsPersonFill fontSize={26} /></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
