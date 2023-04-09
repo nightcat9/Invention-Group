@@ -1,6 +1,4 @@
 .profile{
-  width: 90%;
-  max-width: 400px;
   border: 1px solid #dcdcdc;
   padding: 20px;
   text-align: center;
@@ -11,7 +9,31 @@
 }
 
 .profile > span{
-  color: blue;
   cursor: pointer;
   margin-top: 30px;
+}
+
+.signoutbtn {
+  background-color: rgb(251, 176, 64);
+  font-family: 'DM Serif Text', serif;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 3px;
+  color: black;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.profile > button{
+  height: 40px;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 3px;
+  
+}
+
+.userInfo p {
+  width: 100%;
 }

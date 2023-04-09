@@ -74,7 +74,9 @@ function Login() {
                   Don't have an account?
                 </h3>
                 <p>
-                  <Link to='/register'>Create one here</Link>
+                  <Link to='/register'>
+                    Create one here
+                  </Link>
                 </p>
               </Col>
 

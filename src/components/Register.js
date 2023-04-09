@@ -16,7 +16,6 @@ function Register() {
   const navigate = useNavigate();
   const { setTimeActive } = useAuthValue();
 
-
   const validatePassword = () => {
     let isValid = true
     if (password !== '' && confirmPassword !== '') {
@@ -102,7 +101,6 @@ function Register() {
         </div>
       </div>
     </Container>
-
   )
 }
 
