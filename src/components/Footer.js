@@ -18,7 +18,6 @@ function Footer() {
                     <Row className="justify-content-md-center">
                         <Col md={12} lg={2}>
                             <ul>
-
                                 <Link to={"/home"}><li className='footer-nav'><a href={"/home"}>Home</a></li></Link> 
                                 <li className='footer-nav'><a href={"/about"}>About Us</a></li>
                                 <li className='footer-nav'><a href={"/expertise"}>Expertise</a></li>
