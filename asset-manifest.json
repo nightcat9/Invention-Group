@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Invention-Group/home/static/css/main.d0d00f5f.css",
-    "main.js": "/Invention-Group/home/static/js/main.4238602a.js",
-    "static/media/invention-bg-dark.jpg": "/Invention-Group/home/static/media/invention-bg-dark.1355079e73cb161bb4d4.jpg",
-    "static/media/BrimNarrow-Combined2.ttf": "/Invention-Group/home/static/media/BrimNarrow-Combined2.167bf5191d88e56b3f03.ttf",
-    "static/media/BrimNarrow-Combined1.ttf": "/Invention-Group/home/static/media/BrimNarrow-Combined1.640e222dc5bf7fea7d28.ttf",
-    "static/media/Merriweather-Regular.ttf": "/Invention-Group/home/static/media/Merriweather-Regular.da67ca8c38ef44c4773d.ttf",
-    "static/media/wright-airplane.jpg": "/Invention-Group/home/static/media/wright-airplane.d33c3b942713511e8e4f.jpg",
-    "static/media/steam-bike-rendered.jpg": "/Invention-Group/home/static/media/steam-bike-rendered.69bfaf5afb210b912e92.jpg",
-    "static/media/watch.jpg": "/Invention-Group/home/static/media/watch.a201975108af1090c806.jpg",
-    "static/media/space-travel-rendered.jpg": "/Invention-Group/home/static/media/space-travel-rendered.7bf3b246b0967bc04cd1.jpg",
-    "static/media/BrimNarrow-Face.ttf": "/Invention-Group/home/static/media/BrimNarrow-Face.4f2ecef8a8ffca028612.ttf",
-    "static/media/steampunk-guy-rendered.jpg": "/Invention-Group/home/static/media/steampunk-guy-rendered.8d4a4ac55871d9474798.jpg",
-    "static/media/camera-rendered.jpg": "/Invention-Group/home/static/media/camera-rendered.9ff2f0b6b23b3bdcbffd.jpg",
-    "static/media/logo-option2.png": "/Invention-Group/home/static/media/logo-option2.77033f9419367acccaed.png",
-    "static/media/antique-book-cover.regular.otf": "/Invention-Group/home/static/media/antique-book-cover.regular.0daae409dd84fa3ff2a9.otf",
-    "index.html": "/Invention-Group/home/index.html",
-    "main.d0d00f5f.css.map": "/Invention-Group/home/static/css/main.d0d00f5f.css.map",
-    "main.4238602a.js.map": "/Invention-Group/home/static/js/main.4238602a.js.map"
+    "main.css": "/Invention-Group/static/css/main.1d422d40.css",
+    "main.js": "/Invention-Group/static/js/main.9a423ff0.js",
+    "static/media/invention-bg-dark.jpg": "/Invention-Group/static/media/invention-bg-dark.1355079e73cb161bb4d4.jpg",
+    "static/media/BrimNarrow-Combined2.ttf": "/Invention-Group/static/media/BrimNarrow-Combined2.167bf5191d88e56b3f03.ttf",
+    "static/media/BrimNarrow-Combined1.ttf": "/Invention-Group/static/media/BrimNarrow-Combined1.640e222dc5bf7fea7d28.ttf",
+    "static/media/Merriweather-Regular.ttf": "/Invention-Group/static/media/Merriweather-Regular.da67ca8c38ef44c4773d.ttf",
+    "static/media/wright-airplane.jpg": "/Invention-Group/static/media/wright-airplane.d33c3b942713511e8e4f.jpg",
+    "static/media/steam-bike-rendered.jpg": "/Invention-Group/static/media/steam-bike-rendered.69bfaf5afb210b912e92.jpg",
+    "static/media/watch.jpg": "/Invention-Group/static/media/watch.a201975108af1090c806.jpg",
+    "static/media/space-travel-rendered.jpg": "/Invention-Group/static/media/space-travel-rendered.7bf3b246b0967bc04cd1.jpg",
+    "static/media/BrimNarrow-Face.ttf": "/Invention-Group/static/media/BrimNarrow-Face.4f2ecef8a8ffca028612.ttf",
+    "static/media/steampunk-guy-rendered.jpg": "/Invention-Group/static/media/steampunk-guy-rendered.8d4a4ac55871d9474798.jpg",
+    "static/media/camera-rendered.jpg": "/Invention-Group/static/media/camera-rendered.9ff2f0b6b23b3bdcbffd.jpg",
+    "static/media/logo-option2.png": "/Invention-Group/static/media/logo-option2.77033f9419367acccaed.png",
+    "static/media/antique-book-cover.regular.otf": "/Invention-Group/static/media/antique-book-cover.regular.0daae409dd84fa3ff2a9.otf",
+    "index.html": "/Invention-Group/index.html",
+    "main.1d422d40.css.map": "/Invention-Group/static/css/main.1d422d40.css.map",
+    "main.9a423ff0.js.map": "/Invention-Group/static/js/main.9a423ff0.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0d00f5f.css",
-    "static/js/main.4238602a.js"
+    "static/css/main.1d422d40.css",
+    "static/js/main.9a423ff0.js"
   ]
 }
