@@ -2,6 +2,7 @@
   "name": "invention-group-site",
   "version": "0.1.0",
   "homepage": "http://nightcat9.github.io/Invention-Group/",
+  "baseurl": "/home",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
