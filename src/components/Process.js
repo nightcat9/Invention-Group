@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import '../styles/Main.scss';
 import { Row, Col } from 'react-bootstrap';
 
+import Watch from '../images/watch.jpg';
+
 function ProcessPage() {
     return (
         <Container fluid="md">
@@ -10,7 +12,7 @@ function ProcessPage() {
                     <h1>Our Experts Will Tailor a Plan for Your Success</h1>
                 </Row>
                 <Row>
-                    <Col md={12} lg={6}>
+                    <Col md={12} lg={7}>
                         <p>
                             While each invention is different, we recommend starting with the
                             following steps to begin the process of bringing your invention to market.
@@ -55,7 +57,9 @@ function ProcessPage() {
                             company runs smoothly and all royalties are paid on time.
                         </p>
                     </Col>
-                    <Col></Col>
+                    <Col md={12} lg={5}>
+                    <img src={Watch} alt="Old fashioned pocket watch" className='pocketWatch' />
+                    </Col>
                 </Row>
             </div>
         </Container>

@@ -68,7 +68,8 @@ function VerifyEmail() {
             <button
               onClick={resendEmailVerification}
               disabled={timeActive}
-            >Resend Email {timeActive && time}</button>
+            >Resend Email {timeActive && time}
+              className</button>
           </div>
         </div>
       </div>

@@ -2,4 +2,9 @@
   background-color: #FAF9F6;
   text-align: center;
   padding-top: 1%;
+}
+@media print {
+  .logo-img {
+    display: none;
+  }
 }/*# sourceMappingURL=Logo.css.map */

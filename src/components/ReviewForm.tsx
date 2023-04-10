@@ -55,7 +55,7 @@ export default function FormComponent() {
   return (
     <div className="form-container">
       <Form onSubmit={submithandler}>
-        <div className="form-display">
+        <div className="review-form">
           <FormGroup>
             <Label for="rating">Rating</Label>
             <div className="star-rating">
