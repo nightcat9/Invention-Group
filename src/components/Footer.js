@@ -2,8 +2,6 @@ import '../styles/Main.css';
 import FooterLogo from '../images/logo-option2.png';
 import { Row, Col, Container } from 'react-bootstrap';
 
-
-
 function Footer() {
     return (
         <div className='footer'>

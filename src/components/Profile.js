@@ -14,7 +14,7 @@ function Profile() {
         <div className='center'>
           <div className='profile'>
             <Row>
-              <h1>Profile</h1>
+              <h1>Welcome!</h1>
             </Row>
             <Row>
               <Col md={12} lg={6}>
