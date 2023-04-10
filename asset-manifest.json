@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Invention-Group/home/static/css/main.d0d00f5f.css",
-    "main.js": "/Invention-Group/home/static/js/main.2728c0ae.js",
+    "main.js": "/Invention-Group/home/static/js/main.ff869d4a.js",
     "static/media/invention-bg-dark.jpg": "/Invention-Group/home/static/media/invention-bg-dark.1355079e73cb161bb4d4.jpg",
     "static/media/BrimNarrow-Combined2.ttf": "/Invention-Group/home/static/media/BrimNarrow-Combined2.167bf5191d88e56b3f03.ttf",
     "static/media/BrimNarrow-Combined1.ttf": "/Invention-Group/home/static/media/BrimNarrow-Combined1.640e222dc5bf7fea7d28.ttf",
@@ -17,10 +17,10 @@
     "static/media/antique-book-cover.regular.otf": "/Invention-Group/home/static/media/antique-book-cover.regular.0daae409dd84fa3ff2a9.otf",
     "index.html": "/Invention-Group/home/index.html",
     "main.d0d00f5f.css.map": "/Invention-Group/home/static/css/main.d0d00f5f.css.map",
-    "main.2728c0ae.js.map": "/Invention-Group/home/static/js/main.2728c0ae.js.map"
+    "main.ff869d4a.js.map": "/Invention-Group/home/static/js/main.ff869d4a.js.map"
   },
   "entrypoints": [
     "static/css/main.d0d00f5f.css",
-    "static/js/main.2728c0ae.js"
+    "static/js/main.ff869d4a.js"
   ]
 }
