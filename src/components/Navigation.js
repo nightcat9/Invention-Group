@@ -19,9 +19,7 @@ import Home from "./Home";
 import About from "./About";
 import Expertise from "./Expertise";
 import Process from "./Process";
-import Services from "./Services";
 import FAQ from "./FAQ";
-import Blog from "./Blog";
 import Reviews from "./Reviews";
 import Careers from "./Careers";
 import Disclosure from "./Disclosure";
@@ -54,10 +52,8 @@ function Navigation() {
                 <Nav.Link as={Link} to={"/about"}>About Us</Nav.Link>
                 <Nav.Link as={Link} to={"/expertise"}>Expertise</Nav.Link>
                 <Nav.Link as={Link} to={"/process"}>Process</Nav.Link>
-                <Nav.Link as={Link} to={"/services"}>Services</Nav.Link>
                 <NavDropdown title="Resources" id="nav-dropdown">
                   <NavDropdown.Item as={Link} to={"/faq"}>FAQ</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to={"/blog"}>Blog</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to={"/reviews"}>Reviews</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to={"/careers"}>Careers</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to={"/disclosure"}>Disclosure</NavDropdown.Item>
@@ -74,9 +70,7 @@ function Navigation() {
             <Route path="/about" element={<About />} />
             <Route path="/expertise" element={<Expertise />} />
             <Route path="/process" element={<Process />} />
-            <Route path="/services" element={<Services />} />
             <Route path="/faq" element={<FAQ />} />
-            <Route path="/blog" element={<Blog />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/disclosure" element={<Disclosure />} />
