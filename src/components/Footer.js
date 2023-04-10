@@ -8,7 +8,7 @@ function Footer() {
             <Container fluid="md">
                 <Row>
                     <div className='footer-logo'>
-                        <a href={"/home"}><img src={FooterLogo} alt='The Invention Group Logo' width="50%" /></a>
+                        <a href={"/"}><img src={FooterLogo} alt='The Invention Group Logo' width="50%" /></a>
                     </div>
 
                 </Row>
@@ -16,7 +16,7 @@ function Footer() {
                     <Row className="justify-content-md-center">
                         <Col md={12} lg={2}>
                             <ul>
-                                <li className='footer-nav'><a href={"/home"}>Home</a></li>
+                                <li className='footer-nav'><a href={"/"}>Home</a></li>
                                 <li className='footer-nav'><a href={"/about"}>About Us</a></li>
                                 <li className='footer-nav'><a href={"/expertise"}>Expertise</a></li>
                                 <li className='footer-nav'><a href={"/process"}>Process</a></li>
