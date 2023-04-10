@@ -1,6 +1,7 @@
 import '../styles/Main.css';
 import FooterLogo from '../images/logo-option2.png';
 import { Row, Col, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -17,7 +18,8 @@ function Footer() {
                     <Row className="justify-content-md-center">
                         <Col md={12} lg={2}>
                             <ul>
-                                <li className='footer-nav'><a href={"/home"}>Home</a></li>
+
+                                <Link to={"/home"}><li className='footer-nav'><a href={"/home"}>Home</a></li></Link> 
                                 <li className='footer-nav'><a href={"/about"}>About Us</a></li>
                                 <li className='footer-nav'><a href={"/expertise"}>Expertise</a></li>
                                 <li className='footer-nav'><a href={"/process"}>Process</a></li>
@@ -29,7 +31,6 @@ function Footer() {
                                 <li className='footer-nav'><a href={"/faq"}>FAQ</a></li>
                                 <li className='footer-nav'><a href={"/reviews"}>Reviews</a></li>
                                 <li className='footer-nav'><a href={"/careers"}>Careers</a></li>
-                                <li className='footer-nav'><a href={"/disclosure"}>Disclosure</a></li>
                             </ul>
                         </Col>
                     </Row>
