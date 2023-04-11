@@ -17,6 +17,9 @@ function Profile() {
               <h1>Welcome!</h1>
             </Row>
             <Row>
+              <h6>Thank You for Creating an Account With The Invention Group!</h6>
+            </Row>
+            <Row>
               <Col md={12} lg={6}>
                 <div className='userInfo'>
                   <p><strong>Email: </strong>{currentUser?.email}</p>
