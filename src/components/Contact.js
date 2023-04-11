@@ -8,6 +8,8 @@ import '../styles/Main.scss';
 import handleSubmit from './handlesubmit';
 import { findAllQuotes } from '../services/quotes';
 
+import emailjs from 'emailjs-com';
+
 function ContactPage() {
 
     const [quotes, setQuotes] = useState([]);
@@ -28,6 +30,8 @@ function ContactPage() {
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [projectDescription, setProjectDescription] = useState("");
+
+    const [successMsg, setSuccessMsg] = useState("");
 
     const onChangeFirstName = (e) => {
         setFirstName(e.target.value);
@@ -55,6 +59,16 @@ function ContactPage() {
             db: "quotes",
         };
         handleSubmit(result)
+
+        emailjs.sendForm('service_cli5o0x', 'template_uhj2tqg', e.target, 'jiYzHhHjT-E0QIOyN')
+            .then((result) => {
+                console.log("Success!")
+                setSuccessMsg("Thanks for your submission! You will receive an email!")
+            }, (error) => {
+                console.log(error.text);
+                setSuccessMsg("Oh Bummer! Something went wrong!")
+            });
+
         setFirstName("");
         setLastName("");
         setEmail("");
@@ -78,6 +92,7 @@ function ContactPage() {
                     <Col md={12} lg={8}>
                         <div className='quote-form'>
                             <h2>Contact us for a quote</h2>
+                            {successMsg}
                             <Form onSubmit={onQuoteRequestSubmit}>
                                 <div className="form-display">
                                     <Row>
@@ -110,6 +125,7 @@ function ContactPage() {
                                         <Col xs={12} lg={6}>
                                             <FormGroup>
                                                 <Input
+                                                    name="to_email"
                                                     className="email"
                                                     type="email"
                                                     placeholder="email@example.com"
