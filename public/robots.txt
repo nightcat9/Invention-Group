@@ -1,3 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+Sitemap: http://nightcat9.github.io/Invention-Group/sitemap.xml
+  
