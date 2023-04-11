@@ -40,7 +40,7 @@ function VerifyEmail() {
       clearInterval(interval)
     }
     return () => clearInterval(interval);
-  }, [timeActive, time, setTimeActive])
+  }, [timeActive, time])
 
   const resendEmailVerification = () => {
     setButtonDisabled(true)
