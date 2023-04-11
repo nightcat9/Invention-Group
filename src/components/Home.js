@@ -52,6 +52,7 @@ function HomePage() {
                     </Row>
                     <Row>
                         <Col md={12} lg={6}>
+                            <h5>Subscribe to Our Newsletter Today!</h5>
                             <div className='subscribe-form'>
                                 <form action="https://formsubmit.co/fwolfeil@my.wctc.edu" method="POST">
                                     <input type="email" name="email" placeholder="Your email address" required />

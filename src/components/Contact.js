@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import { Row, Col, Button } from 'react-bootstrap';
-import { Form, FormGroup, Label, Input } from 'reactstrap';
+import { Form, FormGroup, Input } from 'reactstrap';
 import { AiFillPhone, AiFillMail } from 'react-icons/ai';
 import { TiLocation } from 'react-icons/ti';
 import '../styles/Main.scss';

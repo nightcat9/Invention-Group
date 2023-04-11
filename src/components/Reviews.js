@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import '../styles/Reviews.css';
 import '../styles/Main.scss';
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import Review from './Review.tsx';
 import FormComponent from './ReviewForm.tsx';
 import { findAll } from '../services/reviews';
