@@ -45,11 +45,16 @@ export default function FormComponent() {
       db: "review",
     }
     handleSubmit(result)
+
     setReviewTitle("");
     setFirstName("");
     setLastName("");
     setComment("");
     setRating(0);
+  }
+
+  function showMessage() {
+    alert("Thanks for your review! It will be posted shortly!");
   }
 
   return (
@@ -138,9 +143,12 @@ export default function FormComponent() {
           </Row>
           <Row>
             <Col>
-              <Button type="submit" id="reviewSubmit" style={{ background: "#fbb040" }}>
+            
+              <Button type="submit" id="reviewSubmit" onClick={() => showMessage()} style={{ background: "#fbb040" }}>
                 Submit
               </Button>
+         
+              
             </Col>
           </Row>
         </div>

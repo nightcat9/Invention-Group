@@ -92,7 +92,7 @@ function ContactPage() {
                     <Col md={12} lg={8}>
                         <div className='quote-form'>
                             <h2>Contact us for a quote</h2>
-                            {successMsg}
+                            <div className='successMsg' style={{color:"#00755E", backgroundColor:"#98FB98"}}>{successMsg}</div>
                             <Form onSubmit={onQuoteRequestSubmit}>
                                 <div className="form-display">
                                     <Row>
