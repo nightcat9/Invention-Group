@@ -12,26 +12,29 @@ function Footer() {
                     </div>
 
                 </Row>
-                <div className='footer-nav'>
+                
+                    <div className='footer-nav'>
                     <Row className="justify-content-md-center">
                         <Col md={12} lg={2}>
                             <ul>
-                                <li className='footer-nav'><a href={"/"}>Home</a></li>
-                                <li className='footer-nav'><a href={"/about"}>About Us</a></li>
-                                <li className='footer-nav'><a href={"/expertise"}>Expertise</a></li>
-                                <li className='footer-nav'><a href={"/process"}>Process</a></li>
-                                <li className='footer-nav'><a href={"/contact"}>Contact</a></li>
+                                <li className='footer-nav'><a href="/Invention-Group/">Home</a></li>
+                                <li className='footer-nav'><a href="/Invention-Group/about">About Us</a></li>
+                                <li className='footer-nav'><a href="/Invention-Group/expertise">Expertise</a></li>
+                                <li className='footer-nav'><a href="/Invention-Group/process">Process</a></li>
+                                <li className='footer-nav'><a href="/Invention-Group/contact">Contact</a></li>
                             </ul>
                         </Col>
                         <Col md={12} lg={2}>
                             <ul>
-                                <li className='footer-nav'><a href={"/faq"}>FAQ</a></li>
-                                <li className='footer-nav'><a href={"/reviews"}>Reviews</a></li>
-                                <li className='footer-nav'><a href={"/careers"}>Careers</a></li>
+                                <li className='footer-nav'><a href="/Invention-Group/faq">FAQ</a></li>
+                                <li className='footer-nav'><a href="/Invention-Group/reviews">Reviews</a></li>
+                                <li className='footer-nav'><a href="/Invention-Group/careers">Careers</a></li>
                             </ul>
                         </Col>
                     </Row>
                 </div>
+                
+                
 
             </Container>
         </div>
