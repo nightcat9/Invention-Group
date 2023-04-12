@@ -1,6 +1,9 @@
 import '../styles/Main.css';
 import FooterLogo from '../images/logo-option2.png';
 import { Row, Col, Container } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -12,29 +15,29 @@ function Footer() {
                     </div>
 
                 </Row>
-                
-                    <div className='footer-nav'>
+
+                <div className='footer-nav'>
                     <Row className="justify-content-md-center">
                         <Col md={12} lg={2}>
                             <ul>
-                                <li className='footer-nav'><a href="/Invention-Group/">Home</a></li>
-                                <li className='footer-nav'><a href="/Invention-Group/about">About Us</a></li>
-                                <li className='footer-nav'><a href="/Invention-Group/expertise">Expertise</a></li>
-                                <li className='footer-nav'><a href="/Invention-Group/process">Process</a></li>
-                                <li className='footer-nav'><a href="/Invention-Group/contact">Contact</a></li>
+                                <li className='footer-nav'><Nav.Link as={Link} to={"/"}>Home</Nav.Link></li>
+                                <li className='footer-nav'><Nav.Link as={Link} to={"/about"}>About Us</Nav.Link></li>
+                                <li className='footer-nav'><Nav.Link as={Link} to={"/expertise"}>Expertise</Nav.Link></li>
+                                <li className='footer-nav'><Nav.Link as={Link} to={"/process"}>Process</Nav.Link></li>
+                                <li className='footer-nav'><Nav.Link as={Link} to={"/contact"}>Contact</Nav.Link></li>
                             </ul>
                         </Col>
                         <Col md={12} lg={2}>
                             <ul>
-                                <li className='footer-nav'><a href="/Invention-Group/faq">FAQ</a></li>
-                                <li className='footer-nav'><a href="/Invention-Group/reviews">Reviews</a></li>
-                                <li className='footer-nav'><a href="/Invention-Group/careers">Careers</a></li>
+                                <li className='footer-nav'><Nav.Link as={Link} to={"/faq"}>FAQ</Nav.Link></li>
+                                <li className='footer-nav'><Nav.Link as={Link} to={"/reviews"}>Reviews</Nav.Link></li>
+                                <li className='footer-nav'><Nav.Link as={Link} to={"/careers"}>Careers</Nav.Link></li>
                             </ul>
                         </Col>
                     </Row>
                 </div>
-                
-                
+
+
 
             </Container>
         </div>

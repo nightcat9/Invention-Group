@@ -8,26 +8,9 @@ import { NavDropdown } from 'react-bootstrap';
 import { BsPersonFill } from "react-icons/bs";
 import { AuthProvider } from './AuthContext';
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Routes,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import Home from "./Home";
-import About from "./About";
-import Expertise from "./Expertise";
-import Process from "./Process";
-import FAQ from "./FAQ";
-import Reviews from "./Reviews";
-import Careers from "./Careers";
-import Disclosure from "./Disclosure";
-import Contact from "./Contact";
-import Login from './Login';
-import Register from './Register';
-import VerifyEmail from './VerifyEmail';
-import Profile from './Profile';
+
 
 
 function Navigation() {
@@ -41,7 +24,6 @@ function Navigation() {
   }, [])
 
   return (
-    <Router>
       <AuthProvider value={{ currentUser, timeActive, setTimeActive }}>
         <Navbar bg="light" expand="lg">
           <Container fluid>
@@ -64,27 +46,7 @@ function Navigation() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        <div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/expertise" element={<Expertise />} />
-            <Route path="/process" element={<Process />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/reviews" element={<Reviews />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/disclosure" element={<Disclosure />} />
-            <Route path="/contact" element={<Contact />} />
-
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path='/verify-email' element={<VerifyEmail />} />
-
-          </Routes>
-        </div>
       </AuthProvider>
-    </Router>
   );
 }
 
