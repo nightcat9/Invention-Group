@@ -1,30 +1,15 @@
 import Container from 'react-bootstrap/Container';
-import { useState, useEffect } from 'react';
-import { auth } from '../firebase_setup/firebase';
-import { onAuthStateChanged } from 'firebase/auth';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavDropdown } from 'react-bootstrap';
 import { BsPersonFill } from "react-icons/bs";
-import { AuthProvider } from './AuthContext';
+
 
 import { Link } from "react-router-dom";
 
-
-
-
 function Navigation() {
-  const [currentUser, setCurrentUser] = useState(null);
-  const [timeActive, setTimeActive] = useState(false);
-
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      setCurrentUser(user)
-    })
-  }, [])
 
   return (
-      <AuthProvider value={{ currentUser, timeActive, setTimeActive }}>
         <Navbar bg="light" expand="lg">
           <Container fluid>
             <Navbar.Toggle aria-controls="navbarScroll" />
@@ -46,7 +31,6 @@ function Navigation() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </AuthProvider>
   );
 }
 

@@ -4,6 +4,10 @@ import Navigation from './components/Navigation.js';
 import Logo from './components/Logo.js';
 import Footer from './components/Footer.js';
 
+import { useState, useEffect } from 'react';
+import { auth } from './firebase_setup/firebase';
+import { onAuthStateChanged } from 'firebase/auth';
+
 import Home from "./components/Home";
 import About from "./components/About";
 import Expertise from "./components/Expertise";
@@ -19,13 +23,24 @@ import VerifyEmail from './components/VerifyEmail';
 import Profile from './components/Profile';
 
 import { Routes, Route } from "react-router-dom";
+import { AuthProvider } from './components/AuthContext';
 
 function App() {
+
+  const [currentUser, setCurrentUser] = useState(null);
+  const [timeActive, setTimeActive] = useState(false);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setCurrentUser(user)
+    })
+  }, [])
 
   return (
     <div className="App">
       <Logo />
-      <Navigation />
+      <AuthProvider value={{ currentUser, timeActive, setTimeActive }}>
+        <Navigation />
       <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -43,7 +58,10 @@ function App() {
             <Route path='/verify-email' element={<VerifyEmail />} />
 
           </Routes>
-      <Footer />
+          <Footer />
+      </AuthProvider>
+      
+      
     </div>
   );
 }
