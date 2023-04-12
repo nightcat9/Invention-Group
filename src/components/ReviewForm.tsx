@@ -143,12 +143,9 @@ export default function FormComponent() {
           </Row>
           <Row>
             <Col>
-            
               <Button type="submit" id="reviewSubmit" onClick={() => showMessage()} style={{ background: "#fbb040" }}>
                 Submit
-              </Button>
-         
-              
+              </Button>   
             </Col>
           </Row>
         </div>
