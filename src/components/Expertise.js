@@ -51,9 +51,9 @@ function ExpertisePage() {
                             market interest, and next steps. You will have all of the tools you need to bring your product to market and we'll help
                             you get it done.
                         </p>
-                        <p>
-                            If you are ready to begin, <a href={"/Invention-Group/contact"}>click here to request your free invention evaluation.</a>
-                        </p>
+                        <h6>
+                            If you are ready to begin, contact us to request your free invention evaluation.
+                        </h6>
                     </Col>
                 </Row>
             </div>

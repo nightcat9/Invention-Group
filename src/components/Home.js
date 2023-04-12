@@ -42,9 +42,9 @@ function HomePage() {
                                 interest and the product is ready for market. If our evaluation determines that your
                                 invention is a viable product, you only pay us when we license a deal for you.
                             </p>
-                            <p>
-                                <a href={"/Invention-Group/contact"}>Click here to request your free invention evaluation.</a>
-                            </p>
+                            <h6>
+                                Contact us to request your free invention evaluation.
+                            </h6>
                         </Col>
                         <Col md={12} lg={5}>
                             <img src={SteamPunkGuy} alt="man dressed in steampunk attire" className='steamPunkGuy' />

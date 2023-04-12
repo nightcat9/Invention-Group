@@ -39,9 +39,9 @@ function AboutPage() {
                             We maintain the largest network of sales offices in the country. We'll use those
                             connections to drive sales through the roof!
                         </p>
-                        <p>
-                            Lets get started! <a href={"/Invention-Group/contact"}>Click here to request your free invention evaluation.</a>
-                        </p>
+                        <h6>
+                            Lets get started! Contact us today to request your free invention evaluation.
+                        </h6>
                     </Col>
                     <Col md={12} lg={5}>
                         <img src={Camera} alt="old fashioned camera with photos and leather bag" className='camera' />
