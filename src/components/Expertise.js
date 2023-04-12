@@ -52,7 +52,7 @@ function ExpertisePage() {
                             you get it done.
                         </p>
                         <p>
-                            If you are ready to begin, <a href={"/contact"}>click here to request your free invention evaluation.</a>
+                            If you are ready to begin, <a href={"/Invention-Group/contact"}>click here to request your free invention evaluation.</a>
                         </p>
                     </Col>
                 </Row>

@@ -43,7 +43,7 @@ function HomePage() {
                                 invention is a viable product, you only pay us when we license a deal for you.
                             </p>
                             <p>
-                                <a href={"/contact"}>Click here to request your free invention evaluation.</a>
+                                <a href={"/Invention-Group/contact"}>Click here to request your free invention evaluation.</a>
                             </p>
                         </Col>
                         <Col md={12} lg={5}>

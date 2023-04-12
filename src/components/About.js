@@ -40,7 +40,7 @@ function AboutPage() {
                             connections to drive sales through the roof!
                         </p>
                         <p>
-                            Lets get started! <a href={"/contact"}>Click here to request your free invention evaluation.</a>
+                            Lets get started! <a href={"/Invention-Group/contact"}>Click here to request your free invention evaluation.</a>
                         </p>
                     </Col>
                     <Col md={12} lg={5}>
